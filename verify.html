@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产品校验 · Product Verify</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fafafa;
+    --card: #fff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --text-light: #6b7280;
+    --accent: #1f2937;
+    --warn: #f59e0b;
+    --error: #ef4444;
+    --ok: #10b981;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    font-size: 13px;
+  }
+
+  /* Header */
+  header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 20px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .title { font-size: 18px; font-weight: 700; }
+  .title a { color: var(--text); text-decoration: none; margin-left: 12px; font-size: 12px; font-weight: 500; color: var(--text-light); }
+
+  /* Stats */
+  .stats { display: flex; gap: 8px; flex-wrap: wrap; max-width: 1400px; margin: 16px auto 0; }
+  .stat {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .stat-num { font-size: 18px; font-weight: 700; }
+  .stat-ok { color: var(--ok); }
+  .stat-warn { color: var(--warn); }
+  .stat-error { color: var(--error); }
+  .stat-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .stat-dot.ok { background: var(--ok); }
+  .stat-dot.warn { background: var(--warn); }
+  .stat-dot.error { background: var(--error); }
+
+  /* Controls */
+  .controls {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    position: sticky;
+    top: 64px;
+    z-index: 99;
+  }
+  .controls-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 13px;
+  }
+  .filter-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    background: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .filter-btn:hover:not(.active) { background: #f3f4f6; }
+
+  /* Main */
+  main { max-width: 1400px; margin: 0 auto; padding: 20px 24px 60px; }
+  .cat-section { margin-bottom: 32px; }
+  .cat-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .cat-title { font-size: 14px; font-weight: 700; }
+  .cat-count { font-size: 11px; color: var(--text-light); margin-left: auto; }
+  .cat-warn { font-size: 11px; color: var(--warn); }
+
+  /* Compact product list */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+  }
+  .product-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.15s;
+  }
+  .product-item:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .product-item.warn { border-color: var(--warn); background: #fffbeb; }
+  .product-item.error { border-color: var(--error); background: #fef2f2; }
+  .product-item.shared-img { border-color: var(--warn); border-style: dashed; }
+
+  .product-img {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f9fafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 4px;
+  }
+  .product-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .product-img.no-img { color: var(--text-light); font-size: 11px; }
+
+  .product-info { padding: 6px 8px 8px; }
+  .product-code { font-size: 10px; color: var(--text-light); font-family: monospace; }
+  .product-name { font-size: 11px; font-weight: 600; line-height: 1.3; margin-top: 2px;
+                  overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .product-name-zh { font-size: 10px; color: var(--text-light); margin-top: 2px;
+                     overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .badge { display: inline-block; font-size: 9px; padding: 1px 4px; border-radius: 3px; margin-top: 3px; }
+  .badge-warn { background: #fef3c7; color: #92400e; }
+  .badge-error { background: #fee2e2; color: #991b1b; }
+
+  /* Modal for big image */
+  .img-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    cursor: zoom-out;
+  }
+  .img-modal.open { display: flex; }
+  .img-modal img { max-width: 90%; max-height: 90%; object-fit: contain; }
+  .img-modal-info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="title">
+      🔍 产品校验 · Product Verify
+      <a href="./">← 返回主页</a>
+    </div>
+  </div>
+  <div class="stats" id="stats">
+    <div class="stat"><span class="stat-dot ok"></span><span>总产品</span><span class="stat-num stat-ok" id="statTotal">—</span></div>
+    <div class="stat"><span class="stat-dot ok"></span><span>有图</span><span class="stat-num stat-ok" id="statHasImg">—</span></div>
+    <div class="stat"><span class="stat-dot warn"></span><span>共用图</span><span class="stat-num stat-warn" id="statShared">—</span></div>
+    <div class="stat"><span class="stat-dot error"></span><span>缺图</span><span class="stat-num stat-error" id="statNoImg">—</span></div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <input type="text" class="search-input" id="searchInput" placeholder="搜索产品 / Search products...">
+    <button class="filter-btn active" data-filter="all">全部</button>
+    <button class="filter-btn" data-filter="warn">⚠ 可疑</button>
+    <button class="filter-btn" data-filter="shared">共用图</button>
+    <button class="filter-btn" data-filter="noimg">缺图</button>
+    <span style="margin-left:auto; font-size:11px; color:var(--text-light);">点击图片可放大</span>
+  </div>
+</div>
+
+<main id="mainContent">
+  <p style="text-align:center; padding:40px; color:var(--text-light);">加载中...</p>
+</main>
+
+<!-- Image zoom modal -->
+<div class="img-modal" id="imgModal" onclick="this.classList.remove('open')">
+  <img id="imgModalImg" src="" alt="">
+  <div class="img-modal-info" id="imgModalInfo"></div>
+</div>
+
+<script>
+let ALL_PRODUCTS = [];
+let SHARED_IMAGES = new Set();   // 被多个产品用的图
+let CURRENT_FILTER = 'all';
+
+async function init() {
+  const resp = await fetch('./products.json');
+  ALL_PRODUCTS = await resp.json();
+  // 加上 code 字段
+  ALL_PRODUCTS.forEach((p, i) => {
+    p.code = String(i + 1).padStart(3, '0');
+    const m = p.name.match(/^(\d+)\s+(.+)$/);
+    p.nameOnly = m ? m[2] : p.name;
+  });
+
+  // 找出共用图的图名
+  const imgCount = new Map();
+  ALL_PRODUCTS.forEach(p => {
+    if (p.image) imgCount.set(p.image, (imgCount.get(p.image) || 0) + 1);
+  });
+  for (const [img, cnt] of imgCount) {
+    if (cnt > 1) SHARED_IMAGES.add(img);
+  }
+
+  // 统计
+  const noImg = ALL_PRODUCTS.filter(p => !p.image);
+  document.getElementById('statTotal').textContent = ALL_PRODUCTS.length;
+  document.getElementById('statHasImg').textContent = ALL_PRODUCTS.length - noImg.length;
+  document.getElementById('statShared').textContent = SHARED_IMAGES.size;
+  document.getElementById('statNoImg').textContent = noImg.length;
+
+  render();
+}
+
+function render() {
+  const q = document.getElementById('searchInput').value.trim().toLowerCase();
+  const main = document.getElementById('mainContent');
+
+  // 按类目分组
+  const groups = {};
+  const catOrder = [];
+  ALL_PRODUCTS.forEach(p => {
+    if (!groups[p.category]) {
+      groups[p.category] = [];
+      catOrder.push(p.category);
+    }
+    groups[p.category].push(p);
+  });
+
+  let totalShown = 0;
+  let html = '';
+
+  for (const cat of catOrder) {
+    let items = groups[cat];
+    // 搜索过滤
+    if (q) {
+      items = items.filter(p => {
+        const hay = [p.nameOnly, p.nameZh || '', p.spec, p.cert, p.customer, p.category, p.image].join(' ').toLowerCase();
+        return hay.includes(q);
+      });
+    }
+    // 状态过滤
+    if (CURRENT_FILTER === 'warn') {
+      items = items.filter(p => !p.image || SHARED_IMAGES.has(p.image));
+    } else if (CURRENT_FILTER === 'shared') {
+      items = items.filter(p => SHARED_IMAGES.has(p.image));
+    } else if (CURRENT_FILTER === 'noimg') {
+      items = items.filter(p => !p.image);
+    }
+
+    if (items.length === 0) continue;
+
+    const catWarn = items.filter(p => !p.image || SHARED_IMAGES.has(p.image)).length;
+    html += `
+      <section class="cat-section">
+        <div class="cat-header">
+          <span class="cat-title">${cat}</span>
+          ${catWarn > 0 ? `<span class="cat-warn">⚠ ${catWarn}</span>` : ''}
+          <span class="cat-count">${items.length} 个</span>
+        </div>
+        <div class="product-list">
+          ${items.map(p => renderItem(p)).join('')}
+        </div>
+      </section>
+    `;
+    totalShown += items.length;
+  }
+
+  if (totalShown === 0) {
+    html = '<p style="text-align:center; padding:60px; color:var(--text-light);">没有匹配的产品</p>';
+  }
+  main.innerHTML = html;
+}
+
+function renderItem(p) {
+  const isShared = SHARED_IMAGES.has(p.image);
+  const isNoImg = !p.image;
+  const cls = isNoImg ? 'error' : isShared ? 'shared-img' : '';
+  const badge = isNoImg ? '<span class="badge badge-error">缺图</span>'
+              : isShared ? '<span class="badge badge-warn">共用图</span>' : '';
+  const imgHtml = isNoImg
+    ? '<div class="product-img no-img">无图</div>'
+    : `<div class="product-img" onclick="event.stopPropagation(); zoomImg('${p.image}', '${p.code} ${escapeHtml(p.nameOnly)}')">
+         <img src="./images/${p.image}" alt="${escapeHtml(p.nameOnly)}" loading="lazy">
+       </div>`;
+  return `
+    <div class="product-item ${cls}">
+      ${imgHtml}
+      <div class="product-info">
+        <div class="product-code">#${p.code}</div>
+        <div class="product-name" title="${escapeHtml(p.nameOnly)}">${escapeHtml(p.nameOnly)}</div>
+        <div class="product-name-zh" title="${escapeHtml(p.nameZh || '')}">${escapeHtml(p.nameZh || '')}</div>
+        ${badge}
+      </div>
+    </div>
+  `;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  })[c]);
+}
+
+function zoomImg(src, info) {
+  document.getElementById('imgModalImg').src = `./images/${src}`;
+  document.getElementById('imgModalInfo').textContent = info;
+  document.getElementById('imgModal').classList.add('open');
+}
+
+// 事件
+document.getElementById('searchInput').addEventListener('input', render);
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    CURRENT_FILTER = btn.dataset.filter;
+    render();
+  });
+});
+
+init();
+</script>
+</body>
+</html>

@@ -630,10 +630,9 @@
 
   function renderCards() {
     const q = CURRENT_QUERY.trim().toLowerCase();
-    // 按关键词过滤
+    // 按关键词过滤（跨语言：搜中文能匹配英文名，反之亦然）
     const filtered = !q ? ALL_PRODUCTS : ALL_PRODUCTS.filter(p => {
-      const haystack = [p.name, p.spec, p.cert, p.customer, p.category].join(' ').toLowerCase();
-      return haystack.includes(q);
+      return p._searchHaystack.includes(q);
     });
 
     // 按类目分组
@@ -654,15 +653,17 @@
         return;
       }
       section.style.display = '';
+      const lang = document.body.dataset.lang;
       grid.innerHTML = items.map(p => {
+        const displayName = lang === 'en' ? p.nameOnly : (p.nameZh || p.nameOnly);
         return `
           <div class="product-card">
             <div class="product-img">
-              <img src="./images/${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy">
+              <img src="./images/${escapeHtml(p.image)}" alt="${escapeHtml(displayName)}" loading="lazy">
             </div>
             <div class="product-body">
               <div class="product-code">#${escapeHtml(p.code)}</div>
-              <div class="product-name">${highlight(p.name, q)}</div>
+              <div class="product-name">${highlight(displayName, q)}</div>
               <div class="product-spec">${highlight(p.spec, q)}</div>
               ${p.cert ? `<div class="product-cert">✓ ${highlight(p.cert, q)}</div>` : ''}
             </div>
@@ -694,9 +695,12 @@
       // 用列表序号作为 code（001, 002, ... 268）
       products.forEach((p, i) => {
         p.code = String(i + 1).padStart(3, '0');
-        // 如果 name 以数字开头，去掉它（避免重复编号）
         const m = p.name.match(/^(\d+)\s+(.+)$/);
         p.nameOnly = m ? m[2] : p.name;
+        // 准备搜索用的"双语关键词"——把中英文名合并成一个 haystack
+        p._searchHaystack = [
+          p.nameOnly, p.nameZh || '', p.spec, p.cert, p.customer, p.category
+        ].join(' ').toLowerCase();
       });
       ALL_PRODUCTS = products;
       buildLayout();
@@ -787,11 +791,12 @@
     if (!p) return;
     currentProductCode = code;
     const lang = document.body.dataset.lang;
+    const displayName = lang === 'en' ? p.nameOnly : (p.nameZh || p.nameOnly);
 
     modalImg.src = `./images/${p.image}`;
-    modalImg.alt = p.nameOnly;
+    modalImg.alt = displayName;
     modalCode.textContent = `#${p.code}`;
-    modalName.textContent = p.nameOnly;
+    modalName.textContent = displayName;
     modalSpecs.textContent = p.spec || '—';
     modalCert.textContent = p.cert || '';
 
@@ -802,7 +807,7 @@
       modalCustomer.textContent = translateCustomer(p.customer) || '—';
     }
 
-    // 类目：英文模式只英文，中文模式只中文（用户偏好）
+    // 类目：英文模式只英文，中文模式只中文
     modalCat.textContent = catName(p.category, lang);
 
     // 认证段：没有认证就隐藏整段
