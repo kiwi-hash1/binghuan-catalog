@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>炳焕国际贸易 · Binghuan International Trading</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #fafafa;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --text-light: #6b7280;
+    --accent: #1f2937;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  /* Header */
+  header {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.95);
+  }
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand { display: flex; flex-direction: column; gap: 4px; }
+  .brand-name { font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
+  .brand-name .en { color: var(--text-light); font-weight: 500; font-size: 14px; margin-left: 8px; }
+  .brand-sub { font-size: 12px; color: var(--text-light); letter-spacing: 0.5px; }
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+  .lang-toggle button {
+    border: none;
+    background: #fff;
+    padding: 6px 14px;
+    cursor: pointer;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .lang-toggle button.active { background: var(--accent); color: #fff; }
+  .lang-toggle button:not(.active):hover { background: #f3f4f6; }
+  .lang-toggle button + button { border-left: 1px solid var(--border); }
+
+  /* Category nav */
+  nav {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    position: sticky;
+    top: 88px;
+    z-index: 99;
+  }
+  nav .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.15s;
+  }
+  nav a:hover { color: var(--text); }
+
+  /* Search bar */
+  .search-bar {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 24px;
+    position: sticky;
+    top: 132px;
+    z-index: 98;
+  }
+  .search-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .search-input {
+    width: 100%;
+    padding: 10px 36px 10px 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #f9fafb;
+    transition: all 0.15s;
+  }
+  .search-input:focus {
+    outline: none;
+    background: #fff;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(31,41,55,0.05);
+  }
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    pointer-events: none;
+  }
+  .search-clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: #f3f4f6;
+    color: var(--text-light);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-clear:hover { background: #e5e7eb; color: var(--text); }
+  .search-bar.has-query .search-clear { display: flex; }
+  .search-result-count {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 6px;
+    display: none;
+  }
+  .search-bar.has-query .search-result-count { display: block; }
+  .search-highlight {
+    background: #fef3c7;
+    padding: 0 2px;
+    border-radius: 2px;
+  }
+
+  /* Product card clickable */
+  .product-card { cursor: pointer; }
+
+  /* Product detail modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 16px;
+    overflow-y: auto;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: #fff;
+    border-radius: 12px;
+    max-width: 880px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    animation: modalIn 0.2s ease-out;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: translateY(20px) scale(0.98); }
+    to   { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: rgba(255,255,255,0.95);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--text-light);
+    z-index: 2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  .modal-close:hover { color: var(--text); background: #fff; }
+  .modal-img {
+    background: #fff;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--border);
+  }
+  .modal-img img { max-width: 100%; max-height: 480px; object-fit: contain; }
+  .modal-body { padding: 32px; }
+  .modal-cat {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .modal-code {
+    font-size: 12px;
+    color: var(--text-light);
+    font-family: "SF Mono", Menlo, monospace;
+    margin-bottom: 8px;
+  }
+  .modal-name {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 16px;
+  }
+  .modal-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 20px 0;
+  }
+  .modal-section-label {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .modal-intro {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text);
+  }
+  .modal-specs {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text);
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .modal-customer {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .modal-cert {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #047857;
+    background: #ecfdf5;
+    border-left: 3px solid #10b981;
+    border-radius: 4px;
+    padding: 10px 14px;
+  }
+  .modal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 24px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--text);
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .modal-back:hover { background: #f9fafb; }
+
+  @media (max-width: 720px) {
+    .modal { grid-template-columns: 1fr; }
+    .modal-img { border-right: none; border-bottom: 1px solid var(--border); padding: 20px; }
+    .modal-img img { max-height: 280px; }
+    .modal-body { padding: 20px; }
+    .modal-name { font-size: 18px; }
+  }
+
+  /* Main */
+  main { max-width: 1280px; margin: 0 auto; padding: 40px 24px 80px; }
+  .cat-section { margin-bottom: 64px; scroll-margin-top: 140px; }
+  .cat-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--text);
+  }
+  .cat-title { font-size: 22px; font-weight: 700; }
+  .cat-title-en { font-size: 13px; color: var(--text-light); font-weight: 500; }
+  .cat-count { font-size: 12px; color: var(--text-light); margin-left: auto; }
+
+  /* Product grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .product-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+    border-color: #d1d5db;
+  }
+  .product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 12px;
+  }
+  .product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .product-body { padding: 12px 14px 16px; flex: 1; display: flex; flex-direction: column; gap: 6px; }
+  .product-code { font-size: 11px; color: var(--text-light); font-family: "SF Mono", Menlo, monospace; }
+  .product-name { font-size: 14px; font-weight: 600; line-height: 1.4; }
+  .product-spec {
+    font-size: 12px;
+    color: var(--text-light);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .product-cert {
+    font-size: 11px;
+    color: #047857;
+    line-height: 1.4;
+    margin-top: auto;
+    padding-top: 6px;
+    border-top: 1px dashed #d1fae5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Footer */
+  footer {
+    background: #fff;
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+    color: var(--text-light);
+    font-size: 12px;
+  }
+  footer .brand-en { font-weight: 600; color: var(--text); margin-bottom: 4px; }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .product-name { font-size: 13px; }
+    .product-spec { font-size: 11px; -webkit-line-clamp: 2; }
+    header { padding: 20px 16px 16px; }
+    nav { top: 76px; padding: 0 16px; }
+    .search-bar { top: 116px; padding: 10px 16px; }
+    main { padding: 24px 16px 60px; }
+    .cat-title { font-size: 18px; }
+  }
+
+  /* Language switch */
+  body[data-lang="en"] [data-zh] { display: none; }
+  body[data-lang="zh"] [data-en] { display: none; }
+  /* 中文模式下隐藏英文副标题（避免重复） */
+  body[data-lang="en"] .brand-name .en { display: none; }
+</style>
+</head>
+<body data-lang="zh">
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-name">
+        <span data-zh>炳焕国际贸易</span>
+        <span data-en>Binghuan International Trading</span>
+        <span class="en">Binghuan International Trading</span>
+      </div>
+      <div class="brand-sub" data-zh>全球供货 · Global Product Supply</div>
+      <div class="brand-sub" data-en>Global Product Supply · 全球供货</div>
+    </div>
+    <div class="lang-toggle">
+      <button data-set-lang="zh" class="active">中文</button>
+      <button data-set-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-inner" id="navInner"></div>
+</nav>
+
+<div class="search-bar">
+  <div class="search-inner">
+    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    <input type="text" class="search-input" id="searchInput"
+      data-zh-placeholder="搜索产品名称、规格、认证..."
+      data-en-placeholder="Search products, specs, certs..."
+      placeholder="搜索产品名称、规格、认证...">
+    <button class="search-clear" id="searchClear" aria-label="清空">×</button>
+    <div class="search-result-count" id="searchResultCount"></div>
+  </div>
+</div>
+
+<main id="mainContent">
+  <!-- 类目区块由 JS 根据 products.json 动态生成 -->
+</main>
+
+<footer>
+  <div class="brand-en">Binghuan International Trading · 炳焕国际贸易</div>
+  <div data-zh>全球供货 · 选品持续更新中</div>
+  <div data-en>Global Supply · Catalog in progress</div>
+</footer>
+
+<!-- Product detail modal -->
+<div class="modal-backdrop" id="productModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" id="productModalContent">
+    <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+    <div class="modal-img"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-body">
+      <div class="modal-cat" id="modalCat"></div>
+      <div class="modal-code" id="modalCode"></div>
+      <h1 class="modal-name" id="modalName"></h1>
+      <div class="modal-divider"></div>
+      <div class="modal-section-label" data-zh>客户群 / 适用场景</div>
+      <div class="modal-section-label" data-en>Customer Group / Application</div>
+      <p class="modal-customer" id="modalCustomer"></p>
+      <div class="modal-divider"></div>
+      <div class="modal-section-label" data-zh>核心能力 / 规格参数</div>
+      <div class="modal-section-label" data-en>Core Capability / Specifications</div>
+      <div class="modal-specs" id="modalSpecs"></div>
+      <div class="modal-cert-block" id="modalCertBlock" style="display:none;">
+        <div class="modal-divider"></div>
+        <div class="modal-section-label" data-zh>资质 / 认证</div>
+        <div class="modal-section-label" data-en>Certifications</div>
+        <div class="modal-cert" id="modalCert"></div>
+      </div>
+      <button class="modal-back" id="modalBack">
+        <span data-zh>← 返回列表</span>
+        <span data-en>← Back to list</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ============ i18n dictionary ============
+  // 类目中英文映射
+  const catI18n = {
+    'Consumer Electronics & Communications': '消费电子与通信',
+    'Home Appliances': '家用电器',
+    'Photovoltaic & Power Equipment': '光伏与电力设备',
+    'Chemical products': '化工产品',
+    'Agricultural Machinery & Tools': '农用机械与农具',
+    'Motorcycles & E-bikes': '摩托车与电动车',
+    'Vehicles & parts': '汽车及零部件',
+    'Construction Machinery & Equipment': '工程机械与设备',
+    'Steel & Metal Products': '钢铁与金属制品',
+    'Textile Raw Materials & Fabrics': '纺织原料与面料',
+    'Household & daily goods': '家居日用品',
+    'Baby & Children Products & Toys': '婴童用品与玩具',
+    'Medical Devices & Pharmaceuticals': '医疗器械与药品',
+    'Building Materials & Construction Supplies': '建材与建筑物资',
+    'Lighting & lamps': '灯具照明',
+    'Food & agricultural products': '食品与农产品',
+  };
+
+  // 客户群中英文映射（用关键词匹配）
+  const customerI18n = {
+    'brand & operator supply': '品牌方与运营商供应',
+    'OEM supply': 'OEM 代工供应',
+    'premium brand OEM supply': '高端品牌 OEM 供应',
+    'international brand': '国际品牌',
+    '3C accessory brand supply': '3C 配件品牌供应',
+    'aftermarket repair parts': '售后维修件供应',
+    'audio brand': '音频品牌',
+    'esports peripherals': '电竞外设',
+    'commercial & enterprise': '商业与企业级',
+    'education & commercial': '教育与商用',
+    'peripheral brand': '外设品牌',
+    'storage & accessory brand': '存储与配件品牌',
+    'office equipment': '办公设备',
+    'security & surveillance': '安防监控',
+    'network equipment': '网络设备',
+    'telecom operator': '电信运营商',
+    'telecom infrastructure': '电信基础设施',
+    'home appliance brand OEM': '家电品牌 OEM',
+    'industrial & outdoor brand': '工业与户外品牌',
+    'audio brand & enterprise': '音频品牌与企业',
+    'premium audio brand OEM': '高端音频品牌 OEM',
+  };
+
+  function translateCustomer(en) {
+    if (!en) return '';
+    const lower = en.toLowerCase();
+    for (const [k, v] of Object.entries(customerI18n)) {
+      if (lower.includes(k)) return en + ' / ' + v;  // 双语显示
+    }
+    return en;
+  }
+
+  // 兼容旧版映射（保留以防万一）
+  const enNameMap = {};  // 现在不需要了——产品名直接用英文
+
+  // ============ Load products ============
+  let ALL_PRODUCTS = [];   // 原始数据（持久）
+  let CURRENT_QUERY = '';  // 当前搜索关键词
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    })[c]);
+  }
+
+  // 高亮匹配关键词
+  function highlight(text, query) {
+    if (!query) return escapeHtml(text);
+    const safe = escapeHtml(text);
+    const q = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return safe.replace(new RegExp(`(${q})`, 'gi'), '<span class="search-highlight">$1</span>');
+  }
+
+  function slugify(s) {
+    return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  }
+
+  // 类目中英文名
+  function catName(cat, lang) {
+    if (lang === 'en') return cat;
+    return catI18n[cat] || cat;
+  }
+
+  // 首次加载：根据产品类目构建 nav 和 main 结构
+  function buildLayout() {
+    // 按类目首次出现的顺序（保留 Excel 中的原始顺序）
+    const groups = {};
+    const catOrder = [];
+    ALL_PRODUCTS.forEach(p => {
+      if (!groups[p.category]) {
+        groups[p.category] = [];
+        catOrder.push(p.category);
+      }
+      groups[p.category].push(p);
+    });
+
+    // 生成 nav
+    const navInner = document.getElementById('navInner');
+    navInner.innerHTML = catOrder.map(cat => {
+      const slug = slugify(cat);
+      const nameEn = cat;
+      const nameZh = catI18n[cat] || cat;
+      return `
+        <a href="#cat-${slug}">
+          <span data-zh>${escapeHtml(nameZh)}</span>
+          <span data-en>${escapeHtml(nameEn)}</span>
+        </a>
+      `;
+    }).join('');
+
+    // 生成 main
+    const main = document.getElementById('mainContent');
+    main.innerHTML = catOrder.map(cat => {
+      const slug = slugify(cat);
+      const nameEn = cat;
+      const nameZh = catI18n[cat] || cat;
+      const count = groups[cat].length;
+      return `
+        <section id="cat-${slug}" class="cat-section" data-cat="${escapeHtml(cat)}">
+          <div class="cat-header">
+            <h2 class="cat-title">
+              <span data-zh>${escapeHtml(nameZh)}</span>
+              <span data-en>${escapeHtml(nameEn)}</span>
+            </h2>
+            <span class="cat-title-en" data-count>${count}</span>
+            <span class="cat-count" data-zh>${count} 款产品</span>
+            <span class="cat-count" data-en>${count} product${count === 1 ? '' : 's'}</span>
+          </div>
+          <div class="product-grid"></div>
+        </section>
+      `;
+    }).join('');
+  }
+
+  function renderCards() {
+    const q = CURRENT_QUERY.trim().toLowerCase();
+    // 按关键词过滤
+    const filtered = !q ? ALL_PRODUCTS : ALL_PRODUCTS.filter(p => {
+      const haystack = [p.name, p.spec, p.cert, p.customer, p.category].join(' ').toLowerCase();
+      return haystack.includes(q);
+    });
+
+    // 按类目分组
+    const groups = {};
+    filtered.forEach(p => {
+      if (!groups[p.category]) groups[p.category] = [];
+      groups[p.category].push(p);
+    });
+
+    // 渲染每个 cat-section
+    document.querySelectorAll('.cat-section').forEach(section => {
+      const cat = section.dataset.cat;
+      const grid = section.querySelector('.product-grid');
+      const items = groups[cat] || [];
+      if (items.length === 0) {
+        section.style.display = q ? 'none' : '';
+        grid.innerHTML = '';
+        return;
+      }
+      section.style.display = '';
+      grid.innerHTML = items.map(p => {
+        return `
+          <div class="product-card">
+            <div class="product-img">
+              <img src="./images/${escapeHtml(p.image)}" alt="${escapeHtml(p.name)}" loading="lazy">
+            </div>
+            <div class="product-body">
+              <div class="product-code">#${escapeHtml(p.code)}</div>
+              <div class="product-name">${highlight(p.name, q)}</div>
+              <div class="product-spec">${highlight(p.spec, q)}</div>
+              ${p.cert ? `<div class="product-cert">✓ ${highlight(p.cert, q)}</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('');
+    });
+
+    // 更新搜索结果计数
+    const countEl = document.getElementById('searchResultCount');
+    const lang = document.body.dataset.lang;
+    if (q) {
+      if (lang === 'en') {
+        countEl.textContent = `Found ${filtered.length} product${filtered.length === 1 ? '' : 's'}`;
+      } else {
+        countEl.textContent = `找到 ${filtered.length} 个匹配产品`;
+      }
+    } else {
+      countEl.textContent = '';
+    }
+
+    // 重新应用当前语言（高亮后 data-zh/data-en 状态需要刷新）
+    applyLang(document.body.dataset.lang);
+  }
+
+  fetch('./products.json')
+    .then(r => r.json())
+    .then(products => {
+      // 用列表序号作为 code（001, 002, ... 268）
+      products.forEach((p, i) => {
+        p.code = String(i + 1).padStart(3, '0');
+        // 如果 name 以数字开头，去掉它（避免重复编号）
+        const m = p.name.match(/^(\d+)\s+(.+)$/);
+        p.nameOnly = m ? m[2] : p.name;
+      });
+      ALL_PRODUCTS = products;
+      buildLayout();
+      renderCards();
+    })
+    .catch(err => {
+      console.error('Failed to load products.json', err);
+      document.getElementById('mainContent').innerHTML =
+        '<p style="color:#dc2626; padding:40px; text-align:center;">产品数据加载失败 / Failed to load products</p>';
+    });
+
+  // ============ Search ============
+  const searchInput = document.getElementById('searchInput');
+  const searchBar = document.querySelector('.search-bar');
+  const searchClear = document.getElementById('searchClear');
+
+  searchInput.addEventListener('input', (e) => {
+    CURRENT_QUERY = e.target.value;
+    searchBar.classList.toggle('has-query', CURRENT_QUERY.trim().length > 0);
+    renderCards();
+  });
+
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    CURRENT_QUERY = '';
+    searchBar.classList.remove('has-query');
+    renderCards();
+    searchInput.focus();
+  });
+
+  // ESC 清空
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      CURRENT_QUERY = '';
+      searchBar.classList.remove('has-query');
+      renderCards();
+    }
+  });
+
+  // ============ Product detail modal ============
+  // 基于产品类目/子类目/规格生成简易产品介绍
+  const catDisplayZh = {
+    '消费电子与通信': '消费电子与通信',
+    '家用电器': '家用电器',
+    '光伏与电力设备': '光伏与电力设备',
+  };
+  const catDisplayEn = {
+    '消费电子与通信': 'Consumer Electronics & Communication',
+    '家用电器': 'Home Appliances',
+    '光伏与电力设备': 'Solar & Power Equipment',
+  };
+
+  // 英文版产品介绍模板（按类目）
+  function genIntroEn(name, cat, spec) {
+    const tpl = {
+      '消费电子与通信': `Reliable ${name.toLowerCase()} sourced directly from qualified manufacturers. Suitable for retail, distribution, and OEM/ODM projects. Detailed specifications available upon request, with samples and bulk pricing negotiable based on order volume.`,
+      '家用电器': `Quality ${name.toLowerCase()} designed for both household and commercial use. Multiple configurations and voltage options available to meet different market requirements. CE / RoHS compliant; customization supported for bulk orders.`,
+      '光伏与电力设备': `Industrial-grade ${name.toLowerCase()} engineered for long-term performance in solar and power applications. Compatible with major international standards; technical datasheets and certifications provided on demand.`,
+    };
+    return tpl[cat] || `Sourcing-ready ${name.toLowerCase()} from verified Chinese manufacturers. ${spec ? 'Key specs: ' + spec + '. ' : ''}Contact us for quotation, samples, and OEM/ODM options.`;
+  }
+
+  function genIntroZh(name, cat, spec) {
+    const tpl = {
+      '消费电子与通信': `${name}，精选自优质制造商，可面向零售、分销及 OEM/ODM 渠道供货。详细规格参数可按需提供，样品与批量价格根据订单量协商。`,
+      '家用电器': `${name}，家用及商用皆适用，提供多种配置与电压方案以满足不同市场需求，符合 CE / RoHS 等国际认证，批量订单可定制。`,
+      '光伏与电力设备': `${name}，工业级品质，针对光伏与电力系统长期稳定运行设计，兼容主流国际标准，技术资料与认证证书按需提供。`,
+    };
+    return tpl[cat] || `${name}，已对接具备资质的中国制造商。${spec ? '核心规格：' + spec + '。' : ''}欢迎询价、提供样品与 OEM/ODM 合作。`;
+  }
+
+  const modal = document.getElementById('productModal');
+  const modalImg = document.getElementById('modalImg');
+  const modalCat = document.getElementById('modalCat');
+  const modalCode = document.getElementById('modalCode');
+  const modalName = document.getElementById('modalName');
+  const modalCustomer = document.getElementById('modalCustomer');
+  const modalSpecs = document.getElementById('modalSpecs');
+  const modalCert = document.getElementById('modalCert');
+  const modalCertBlock = document.getElementById('modalCertBlock');
+  const modalClose = document.getElementById('modalClose');
+  const modalBack = document.getElementById('modalBack');
+  let currentProductCode = null;  // 追踪当前打开的产品
+
+  function openProduct(code) {
+    const p = ALL_PRODUCTS.find(x => x.code === code);
+    if (!p) return;
+    currentProductCode = code;
+    const lang = document.body.dataset.lang;
+
+    modalImg.src = `./images/${p.image}`;
+    modalImg.alt = p.nameOnly;
+    modalCode.textContent = `#${p.code}`;
+    modalName.textContent = p.nameOnly;
+    modalSpecs.textContent = p.spec || '—';
+    modalCert.textContent = p.cert || '';
+
+    // 客户群：中文模式显示双语
+    if (lang === 'en') {
+      modalCustomer.textContent = p.customer || '—';
+    } else {
+      modalCustomer.textContent = translateCustomer(p.customer) || '—';
+    }
+
+    // 类目：英文模式只英文，中文模式只中文（用户偏好）
+    modalCat.textContent = catName(p.category, lang);
+
+    // 认证段：没有认证就隐藏整段
+    modalCertBlock.style.display = p.cert ? 'block' : 'none';
+
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    history.replaceState(null, '', `?id=${code}`);
+  }
+
+  function closeProduct() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    history.replaceState(null, '', location.pathname);
+  }
+
+  modalClose.addEventListener('click', closeProduct);
+  modalBack.addEventListener('click', closeProduct);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeProduct();  // 点背景关闭
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) closeProduct();
+  });
+
+  // 卡片点击事件（事件委托）
+  document.addEventListener('click', (e) => {
+    const card = e.target.closest('.product-card');
+    if (card && !e.target.closest('a, button')) {
+      const code = card.querySelector('.product-code')?.textContent.replace('#', '').trim();
+      if (code) openProduct(code);
+    }
+  });
+
+  // 从 URL 读取 id 参数自动打开
+  // （实际执行在 urlParams 定义之后）
+
+  // ============ Language toggle ============
+  function applyLang(lang) {
+    document.body.dataset.lang = lang;
+    document.querySelectorAll('.lang-toggle button').forEach(b => {
+      b.classList.toggle('active', b.dataset.setLang === lang);
+    });
+    document.documentElement.lang = (lang === 'en' ? 'en' : 'zh-CN');
+
+    // 同步搜索框 placeholder
+    const input = document.getElementById('searchInput');
+    if (input) {
+      const ph = input.dataset[(lang === 'en' ? 'enPlaceholder' : 'zhPlaceholder')];
+      if (ph) input.placeholder = ph;
+    }
+
+    // 重新计算搜索结果计数（语言变化时）
+    if (CURRENT_QUERY.trim() && ALL_PRODUCTS.length) {
+      // 通过 renderCards 重新生成，会用新语言写计数
+      const q = CURRENT_QUERY.trim().toLowerCase();
+      const filtered = ALL_PRODUCTS.filter(p => {
+        const nameZh = (p.name.match(/^\S+\s+(.+)$/) || [])[1] || p.name;
+        const enName = enNameMap[nameZh] || nameZh;
+        return [nameZh, enName, p.spec, p.category, p.image].join(' ').toLowerCase().includes(q);
+      });
+      const countEl = document.getElementById('searchResultCount');
+      if (lang === 'en') {
+        countEl.textContent = `Found ${filtered.length} product${filtered.length === 1 ? '' : 's'}`;
+      } else {
+        countEl.textContent = `找到 ${filtered.length} 个匹配产品`;
+      }
+    }
+
+    // 如果 modal 正打开，用新语言重新渲染
+    if (typeof currentProductCode !== 'undefined' && currentProductCode && document.getElementById('productModal')?.classList.contains('open')) {
+      openProduct(currentProductCode);
+    }
+  }
+
+  document.querySelectorAll('.lang-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.setLang));
+  });
+
+  // 允许 URL 参数 ?lang=en 直接进英文版
+  const urlParams = new URLSearchParams(location.search);
+  const urlLang = urlParams.get('lang');
+  if (urlLang === 'en' || urlLang === 'zh') {
+    applyLang(urlLang);
+  }
+
+  // 允许 URL 参数 ?q=phone 预填搜索（用于分享/演示）
+  const urlQuery = urlParams.get('q');
+  if (urlQuery) {
+    searchInput.value = urlQuery;
+    CURRENT_QUERY = urlQuery;
+    searchBar.classList.add('has-query');
+    // 等产品数据加载完再过滤
+    const waitForData = setInterval(() => {
+      if (ALL_PRODUCTS.length) {
+        clearInterval(waitForData);
+        renderCards();
+      }
+    }, 50);
+  }
+
+  // 允许 URL 参数 ?id=027 自动打开产品详情
+  const idParam = urlParams.get('id');
+  if (idParam) {
+    const waitForData2 = setInterval(() => {
+      if (ALL_PRODUCTS.length) {
+        clearInterval(waitForData2);
+        openProduct(idParam);
+      }
+    }, 50);
+  }
+</script>
+</body>
+</html>
