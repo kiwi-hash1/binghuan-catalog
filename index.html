@@ -656,6 +656,8 @@
       const lang = document.body.dataset.lang;
       grid.innerHTML = items.map(p => {
         const displayName = lang === 'en' ? p.nameOnly : (p.nameZh || p.nameOnly);
+        const displaySpec = lang === 'en' ? p.spec : (p.specZh || p.spec);
+        const displayCert = lang === 'en' ? p.cert : (p.certZh || p.cert);
         return `
           <div class="product-card">
             <div class="product-img">
@@ -664,8 +666,8 @@
             <div class="product-body">
               <div class="product-code">#${escapeHtml(p.code)}</div>
               <div class="product-name">${highlight(displayName, q)}</div>
-              <div class="product-spec">${highlight(p.spec, q)}</div>
-              ${p.cert ? `<div class="product-cert">✓ ${highlight(p.cert, q)}</div>` : ''}
+              <div class="product-spec">${highlight(displaySpec, q)}</div>
+              ${displayCert ? `<div class="product-cert">✓ ${highlight(displayCert, q)}</div>` : ''}
             </div>
           </div>
         `;
@@ -697,9 +699,13 @@
         p.code = String(i + 1).padStart(3, '0');
         const m = p.name.match(/^(\d+)\s+(.+)$/);
         p.nameOnly = m ? m[2] : p.name;
-        // 准备搜索用的"双语关键词"——把中英文名合并成一个 haystack
+        // 准备搜索用的"双语关键词"——把中英文全部合并成一个 haystack
         p._searchHaystack = [
-          p.nameOnly, p.nameZh || '', p.spec, p.cert, p.customer, p.category
+          p.nameOnly, p.nameZh || '',
+          p.spec, p.specZh || '',
+          p.cert, p.certZh || '',
+          p.customer, p.customerZh || '',
+          p.category
         ].join(' ').toLowerCase();
       });
       ALL_PRODUCTS = products;
@@ -797,21 +803,30 @@
     modalImg.alt = displayName;
     modalCode.textContent = `#${p.code}`;
     modalName.textContent = displayName;
-    modalSpecs.textContent = p.spec || '—';
-    modalCert.textContent = p.cert || '';
-
-    // 客户群：中文模式显示双语
+    
+    // 客户群：中文模式用中文版字段，英文模式用英文版
     if (lang === 'en') {
       modalCustomer.textContent = p.customer || '—';
     } else {
-      modalCustomer.textContent = translateCustomer(p.customer) || '—';
+      modalCustomer.textContent = p.customerZh || p.customer || '—';
     }
+    
+    // 规格：中文模式用中文版
+    if (lang === 'en') {
+      modalSpecs.textContent = p.spec || '—';
+    } else {
+      modalSpecs.textContent = p.specZh || p.spec || '—';
+    }
+    
+    // 认证：中文模式用中文版
+    const certText = (lang === 'en' ? p.cert : p.certZh) || '';
+    modalCert.textContent = certText;
 
-    // 类目：英文模式只英文，中文模式只中文
+    // 类目
     modalCat.textContent = catName(p.category, lang);
 
     // 认证段：没有认证就隐藏整段
-    modalCertBlock.style.display = p.cert ? 'block' : 'none';
+    modalCertBlock.style.display = certText ? 'block' : 'none';
 
     modal.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');

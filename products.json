@@ -6,7 +6,10 @@
     "customer": "Entry-level model brand & operator supply",
     "spec": "4-6inch · 2-4GB · 32-64GB · Android · dual SIM · 4000-5000mAh",
     "cert": "",
-    "image": "image267.png"
+    "image": "image267.png",
+    "customerZh": "入门机型品牌方与运营商供应",
+    "specZh": "4-6英寸 · 2-4GB · 32-64GB · 安卓 · 双卡 · 4000-5000mAh",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -15,7 +18,10 @@
     "customer": "International brand OEM supply",
     "spec": "6.5-6.8inch AMOLED · 6-8GB · 128-256GB · 50-108MP · fast charge 67W",
     "cert": "",
-    "image": "image263.png"
+    "image": "image263.png",
+    "customerZh": "国际品牌方贴牌供应",
+    "specZh": "6.5-6.8寸 AMOLED · 6-8GB · 128-256GB · 50-108MP · 快充 67W",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -24,7 +30,10 @@
     "customer": "International premium brand OEM supply",
     "spec": "6.7-6.9 inch LTPO · 12-16 GB · 256 GB-1 TB · Leica / Hasselblad · IP68",
     "cert": "",
-    "image": "image260.png"
+    "image": "image260.png",
+    "customerZh": "国际高端品牌 OEM 供应",
+    "specZh": "6.7-6.9寸 LTPO · 12-16GB · 256GB-1TB · 徕卡/哈苏影像 · IP68",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -33,7 +42,10 @@
     "customer": "Entry-level model brand & operator supply",
     "spec": "2.4-2.8 inch · 32-128 MB · Bluetooth / FM · Dual SIM · Long standby 30+ days",
     "cert": "",
-    "image": "image257.png"
+    "image": "image257.png",
+    "customerZh": "入门机型与运营商供应",
+    "specZh": "2.4-2.8寸 · 32-128MB · 蓝牙/FM · 双卡 · 超长待机 30 天+",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -42,7 +54,10 @@
     "customer": "Industrial & outdoor brand supply",
     "spec": "IP68 waterproof & dust-proof · Large font & buttons · SOS · Flashlight · Large battery",
     "cert": "",
-    "image": "image254.png"
+    "image": "image254.png",
+    "customerZh": "工业配套与户外品牌供应",
+    "specZh": "IP68 防水防尘 · 大字体大按键 · SOS · 手电 · 超大电池",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -51,7 +66,10 @@
     "customer": "3C accessory brand supply",
     "spec": "Type-C / Micro USB · 10-120 W · PD / QC fast charge · Multi-port",
     "cert": "",
-    "image": "image251.jpeg"
+    "image": "image251.jpeg",
+    "customerZh": "3C 配件品牌方供应",
+    "specZh": "Type-C / Micro USB · 10-120W · PD / QC 快充 · 多口",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -60,7 +78,10 @@
     "customer": "3C accessory brand supply",
     "spec": "5000-30000 mAh · PD fast charge · Wireless charge optional · Multi-port output",
     "cert": "",
-    "image": "image249.jpeg"
+    "image": "image249.jpeg",
+    "customerZh": "3C 配件品牌方供应",
+    "specZh": "5000-30000mAh · PD 快充 · 无线充可选 · 多口输出",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -69,7 +90,10 @@
     "customer": "3C accessory brand supply",
     "spec": "TPU / PC hard case · 9H tempered glass · Privacy / Anti-blue light · Fits all models",
     "cert": "",
-    "image": "image248.jpeg"
+    "image": "image248.jpeg",
+    "customerZh": "3C 配件品牌方供应",
+    "specZh": "TPU / PC 硬壳 · 钢化膜 9H · 防窥/防蓝光 · 全机型适配",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -78,7 +102,10 @@
     "customer": "3C accessory brand supply",
     "spec": "Bluetooth remote · 360° rotation · Magnetic / Air-vent clip",
     "cert": "",
-    "image": "image246.jpeg"
+    "image": "image246.jpeg",
+    "customerZh": "3C 配件品牌方供应",
+    "specZh": "蓝牙遥控 · 360° 旋转 · 磁吸 / 出风口夹",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -87,7 +114,10 @@
     "customer": "Aftermarket repair parts wholesale supply",
     "spec": "TFT / OLED assembly · All-model batteries · Flex cable / Charging port / Housing",
     "cert": "",
-    "image": "image244.jpeg"
+    "image": "image244.jpeg",
+    "customerZh": "售后维修件批发供应",
+    "specZh": "TFT / OLED 总成 · 各型号电池 · 排线/尾插/外壳",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -96,7 +126,10 @@
     "customer": "Premium audio brand OEM",
     "spec": "Bluetooth 5.3 · Active ANC · IPX5 · 4-8 h per charge + charging case",
     "cert": "",
-    "image": "image242.jpeg"
+    "image": "image242.jpeg",
+    "customerZh": "高端音频品牌方贴牌",
+    "specZh": "蓝牙 5.3 · ANC 主动降噪 · IPX5 · 单次 4-8h + 充电仓",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -105,7 +138,10 @@
     "customer": "Audio brand & enterprise supply",
     "spec": "40-50 mm diaphragm · ANC / ENC · 20-60 h range · Wired / wireless",
     "cert": "",
-    "image": "image240.jpeg"
+    "image": "image240.jpeg",
+    "customerZh": "音频品牌与企业级供应",
+    "specZh": "40-50mm 振膜 · ANC/ENC · 续航 20-60h · 有线/无线",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -114,7 +150,10 @@
     "customer": "Audio brand OEM",
     "spec": "3-30 W · IPX7 waterproof · TWS pairing · TF card / USB flash playback",
     "cert": "",
-    "image": "image238.jpeg"
+    "image": "image238.jpeg",
+    "customerZh": "音频品牌方贴牌",
+    "specZh": "3-30W · IPX7 防水 · TWS 串联 · TF 卡/U盘播放",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -123,7 +162,10 @@
     "customer": "Esports peripherals brand supply",
     "spec": "Virtual 7.1 channel · RGB lighting · Noise-cancelling mic · USB / 3.5mm",
     "cert": "",
-    "image": "image236.jpeg"
+    "image": "image236.jpeg",
+    "customerZh": "电竞外设品牌方供应",
+    "specZh": "虚拟 7.1 声道 · RGB 灯效 · 降噪麦 · USB / 3.5mm",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -132,7 +174,10 @@
     "customer": "Commercial & enterprise supply",
     "spec": "14-16 inch · i3-i9 / Ryzen · 8-32 GB · 256 GB-1 TB SSD",
     "cert": "",
-    "image": "image234.jpeg"
+    "image": "image234.jpeg",
+    "customerZh": "商用与企业级供应",
+    "specZh": "14-16 寸 · i3-i9 / 锐龙 · 8-32GB · 256GB-1TB SSD",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -141,7 +186,10 @@
     "customer": "Education & commercial supply",
     "spec": "8-12 inch · Android / Windows · 3-8 GB · WiFi / LTE",
     "cert": "",
-    "image": "image232.jpeg"
+    "image": "image232.jpeg",
+    "customerZh": "教育与商用供应",
+    "specZh": "8-12 寸 · 安卓/Windows · 3-8GB · WiFi/LTE",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -150,7 +198,10 @@
     "customer": "Commercial & office supply",
     "spec": "21-32 inch · FHD / 2K / 4K · 60-240 Hz · IPS / VA",
     "cert": "",
-    "image": "image231.jpeg"
+    "image": "image231.jpeg",
+    "customerZh": "商用与办公供应",
+    "specZh": "21-32 寸 · FHD/2K/4K · 60-240Hz · IPS/VA",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -159,7 +210,10 @@
     "customer": "Peripheral brand supply",
     "spec": "Mechanical / membrane · Wired / wireless · RGB · Ergonomic",
     "cert": "",
-    "image": "image230.jpeg"
+    "image": "image230.jpeg",
+    "customerZh": "外设品牌方供应",
+    "specZh": "机械/薄膜 · 有线/无线 · RGB · 人体工学",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -168,7 +222,10 @@
     "customer": "Storage & accessory brand supply",
     "spec": "USB 2.0 / 3.0 · 16-256 GB USB flash · 1-5 TB portable HDD · NVMe SSD",
     "cert": "",
-    "image": "image229.jpeg"
+    "image": "image229.jpeg",
+    "customerZh": "存储与配件品牌方供应",
+    "specZh": "USB 2.0/3.0 · 16-256GB U盘 · 1-5TB 移动硬盘 · NVMe SSD",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -177,7 +234,10 @@
     "customer": "Office equipment supply",
     "spec": "Laser / Inkjet A4 · Mono / Color · Ink tank",
     "cert": "",
-    "image": "image228.jpeg"
+    "image": "image228.jpeg",
+    "customerZh": "办公设备供应",
+    "specZh": "激光/喷墨 A4 · 黑白/彩色 · 墨仓式",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -186,7 +246,10 @@
     "customer": "Security & surveillance brand supply",
     "spec": "1080P-4K · PTZ · WiFi · Night vision / Human detection",
     "cert": "",
-    "image": "image227.jpeg"
+    "image": "image227.jpeg",
+    "customerZh": "安防与监控品牌方供应",
+    "specZh": "1080P-4K · 云台 · WiFi · 夜视/人形检测",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -195,7 +258,10 @@
     "customer": "Network equipment brand supply",
     "spec": "WiFi 5/6/7 · Mesh · GPON · Switch 8-48 ports",
     "cert": "",
-    "image": "image226.jpeg"
+    "image": "image226.jpeg",
+    "customerZh": "网络设备品牌方供应",
+    "specZh": "WiFi 5/6/7 · Mesh · GPON · 交换机 8-48 口",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -204,7 +270,10 @@
     "customer": "Telecom operator equipment supply",
     "spec": "Macro / Small cell · BBU / RRU · Massive MIMO · Multi-band",
     "cert": "",
-    "image": "image225.jpeg"
+    "image": "image225.jpeg",
+    "customerZh": "通信运营商设备供应",
+    "specZh": "宏基站 / 小基站 · BBU/RRU · Massive MIMO · 多频段",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -213,7 +282,10 @@
     "customer": "Telecom network equipment supply",
     "spec": "OTN / DWDM · GPON OLT / ONT · Optical module · Fiber cable",
     "cert": "",
-    "image": "image224.jpeg"
+    "image": "image224.jpeg",
+    "customerZh": "通信网络设备供应",
+    "specZh": "OTN / DWDM · GPON OLT/ONT · 光模块 · 光纤光缆",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -222,7 +294,10 @@
     "customer": "Telecom engineering contractor supply",
     "spec": "19\" standard cabinet 6U-42U · Cat5e / 6 / 7 · Patch panel",
     "cert": "",
-    "image": "image223.png"
+    "image": "image223.png",
+    "customerZh": "通信工程承包商供应",
+    "specZh": "19 寸标准机柜 6U-42U · Cat5e/6/7 · 配线架",
+    "certZh": ""
   },
   {
     "category": "Consumer Electronics & Communications",
@@ -231,7 +306,10 @@
     "customer": "Telecom infrastructure supply",
     "spec": "48 V telecom power · UPS 1-100 kVA · Battery pack",
     "cert": "",
-    "image": "image222.png"
+    "image": "image222.png",
+    "customerZh": "通信基础设施供应",
+    "specZh": "48V 通信电源 · UPS 1-100kVA · 蓄电池组",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -240,7 +318,10 @@
     "customer": "Home appliance brand OEM supply",
     "spec": "1-2 HP · Inverter / fixed frequency · R32 / R410A · 230V / 50 Hz",
     "cert": "",
-    "image": "image221.jpeg"
+    "image": "image221.jpeg",
+    "customerZh": "家电品牌方贴牌供应",
+    "specZh": "1-2HP · 变频/定频 · R32/R410A · 230V/50Hz",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -249,7 +330,10 @@
     "customer": "Home appliance brand OEM supply",
     "spec": "150-500 L · Direct-cool / Frost-free · Two / French door · 230V / 50 Hz",
     "cert": "",
-    "image": "image220.jpeg"
+    "image": "image220.jpeg",
+    "customerZh": "家电品牌方贴牌供应",
+    "specZh": "150-500L · 直冷/风冷 · 双门/对开门 · 230V/50Hz",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -258,7 +342,10 @@
     "customer": "Commercial cold chain & supermarket supply",
     "spec": "100-800 L · Single / Dual temperature · Horizontal / Vertical · Glass door · 230V",
     "cert": "",
-    "image": "image219.jpeg"
+    "image": "image219.jpeg",
+    "customerZh": "商用冷链与商超供应",
+    "specZh": "100-800L · 单温/双温 · 卧式/立式 · 玻璃门 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -267,7 +354,10 @@
     "customer": "Refrigeration equipment OEM supply",
     "spec": "Rotary / Scroll 1-5 HP · Copper tube · 4-way valve · Electronic expansion valve",
     "cert": "",
-    "image": "image218.png"
+    "image": "image218.png",
+    "customerZh": "制冷设备整机厂供应",
+    "specZh": "旋转/涡旋式 1-5HP · 铜管 · 四通阀 · 电子膨胀阀",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -276,7 +366,10 @@
     "customer": "Home appliance brand OEM supply",
     "spec": "5-12 kg · Fully automatic · Stainless drum · 230V / 50 Hz",
     "cert": "",
-    "image": "image217.jpeg"
+    "image": "image217.jpeg",
+    "customerZh": "家电品牌方贴牌供应",
+    "specZh": "5-12KG · 全自动 · 不锈钢内桶 · 230V/50Hz",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -285,7 +378,10 @@
     "customer": "Home appliance brand OEM supply",
     "spec": "7-12 kg · Inverter · Hot wash · Quick wash 15 min · 230V",
     "cert": "",
-    "image": "image216.jpeg"
+    "image": "image216.jpeg",
+    "customerZh": "家电品牌方贴牌供应",
+    "specZh": "7-12KG · 变频 · 高温煮洗 · 快洗 15min · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -294,7 +390,10 @@
     "customer": "Cleaning appliance brand supply",
     "spec": "Handheld / Horizontal · Wireless · Laser nav · 600-2500 Pa · 230V",
     "cert": "",
-    "image": "image215.jpeg"
+    "image": "image215.jpeg",
+    "customerZh": "清洁电器品牌方供应",
+    "specZh": "手持/卧式 · 无线 · 激光导航 · 600-2500Pa · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -303,7 +402,10 @@
     "customer": "Small appliance brand supply",
     "spec": "3-5 L · IH heating · 230V · Multi-menu",
     "cert": "",
-    "image": "image214.jpeg"
+    "image": "image214.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "3-5L · IH 加热 · 230V · 多菜单",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -312,7 +414,10 @@
     "customer": "Small appliance brand supply",
     "spec": "2000-2200 W · Touch / Button · Black crystal panel · 230V",
     "cert": "",
-    "image": "image213.jpeg"
+    "image": "image213.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "2000-2200W · 触摸/按键 · 黑晶面板 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -321,7 +426,10 @@
     "customer": "Small appliance brand supply",
     "spec": "20-30 L · 700-1000 W · Mechanical / Microcomputer · 230V",
     "cert": "",
-    "image": "image212.jpeg"
+    "image": "image212.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "20-30L · 700-1000W · 机械/微电脑 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -330,7 +438,10 @@
     "customer": "Small appliance brand supply",
     "spec": "10-40 L · Upper & lower tubes independent control · Hot air circulation · 230V",
     "cert": "",
-    "image": "image211.png"
+    "image": "image211.png",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "10-40L · 上下管独立控温 · 热风循环 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -339,7 +450,10 @@
     "customer": "Small appliance brand supply",
     "spec": "1.5-2.2 L · 304 stainless · Auto-off · 230V",
     "cert": "",
-    "image": "image210.png"
+    "image": "image210.png",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "1.5-2.2L · 304 不锈钢 · 自动断电 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -348,7 +462,10 @@
     "customer": "Small appliance brand supply",
     "spec": "300-1500 W · Multi-speed · Dry grind · 230V",
     "cert": "",
-    "image": "image209.jpeg"
+    "image": "image209.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "300-1500W · 多档速度 · 干磨 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -357,7 +474,10 @@
     "customer": "Kitchen appliance brand supply",
     "spec": "Two / Single burner · Natural gas / LPG · Tempered glass panel",
     "cert": "",
-    "image": "image208.jpeg"
+    "image": "image208.jpeg",
+    "customerZh": "厨电品牌方供应",
+    "specZh": "双眼/单眼 · 天然气/液化气 · 钢化玻璃面板",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -366,7 +486,10 @@
     "customer": "Small appliance brand supply",
     "spec": "16-18\" · 3-5 speed · Remote / Mechanical · 230V",
     "cert": "",
-    "image": "image207.jpeg"
+    "image": "image207.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "16-18 寸 · 3-5 档 · 遥控/机械 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -375,7 +498,10 @@
     "customer": "Small appliance brand supply",
     "spec": "Oil-filled / Convector / Fan · 1000-2500 W · Thermostat · 230V",
     "cert": "",
-    "image": "image206.jpeg"
+    "image": "image206.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "油汀/对流/暖风机 · 1000-2500W · 恒温 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -384,7 +510,10 @@
     "customer": "Small appliance brand supply",
     "spec": "Steam / Dry · 1000-2000 W · Ceramic soleplate · 230V",
     "cert": "",
-    "image": "image205.jpeg"
+    "image": "image205.jpeg",
+    "customerZh": "小家电品牌方供应",
+    "specZh": "蒸汽/干烫 · 1000-2000W · 陶瓷底板 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -393,7 +522,10 @@
     "customer": "Health appliance brand supply",
     "spec": "RO / UF ultrafiltration · Multi-stage · 230V",
     "cert": "",
-    "image": "image204.jpeg"
+    "image": "image204.jpeg",
+    "customerZh": "健康家电品牌方供应",
+    "specZh": "RO 反渗透 / UF 超滤 · 多级过滤 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -402,7 +534,10 @@
     "customer": "Kitchen & bath appliance brand supply",
     "spec": "Tank 30-100 L · Instant · Gas 8-16 L · Constant temp · 230V",
     "cert": "",
-    "image": "image203.jpeg"
+    "image": "image203.jpeg",
+    "customerZh": "厨卫电器品牌方供应",
+    "specZh": "储水 30-100L · 即热式 · 燃气 8-16L · 恒温 · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -411,7 +546,10 @@
     "customer": "Home appliance brand OEM supply",
     "spec": "32-75 inch · FHD/4K · LED/QLED · Android TV · 230V",
     "cert": "",
-    "image": "image202.jpeg"
+    "image": "image202.jpeg",
+    "customerZh": "家电品牌方贴牌供应",
+    "specZh": "32-75 寸 · FHD/4K · LED/QLED · Android TV · 230V",
+    "certZh": ""
   },
   {
     "category": "Home Appliances",
@@ -420,7 +558,10 @@
     "customer": "Streaming & telecom operator supply",
     "spec": "Android TV · 4K HDR · WiFi / BT · HDMI",
     "cert": "",
-    "image": "image264.png"
+    "image": "image264.png",
+    "customerZh": "流媒体与运营商供应",
+    "specZh": "Android TV · 4K HDR · WiFi/BT · HDMI",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -429,7 +570,10 @@
     "customer": "Residential PV EPC & distributor supply",
     "spec": "1-10kW single-phase · string · 2-3 MPPT · efficiency &gt;97%",
     "cert": "",
-    "image": "image201.jpeg"
+    "image": "image201.jpeg",
+    "customerZh": "户用光伏 EPC 与分销商供应",
+    "specZh": "1-10kW 单相 · 组串式 · 2-3 MPPT · 效率 >97%",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -438,7 +582,10 @@
     "customer": "C&I EPC contractor supply",
     "spec": "10-100kW three-phase · multi-MPPT · efficiency &gt;98%",
     "cert": "",
-    "image": "image200.jpeg"
+    "image": "image200.jpeg",
+    "customerZh": "工商业 EPC 承包商供应",
+    "specZh": "10-100kW 三相 · 多 MPPT · 效率 >98%",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -447,7 +594,10 @@
     "customer": "Utility-scale power plant EPC supply",
     "spec": "100 kW-8.8 MW · Central / String · 1500 V system",
     "cert": "",
-    "image": "image199.png"
+    "image": "image199.png",
+    "customerZh": "大型电站 EPC 供应",
+    "specZh": "100kW-8.8MW · 集中式/组串式 · 1500V 系统",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -456,7 +606,10 @@
     "customer": "PV EPC & project contractor supply",
     "spec": "400-700 W · N-type TOPCon / HJT · Bifacial · 25-year warranty",
     "cert": "",
-    "image": "image198.jpeg"
+    "image": "image198.jpeg",
+    "customerZh": "光伏 EPC 与项目承包商供应",
+    "specZh": "400-700W · N 型 TOPCon / HJT · 双面 · 25 年质保",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -465,7 +618,10 @@
     "customer": "Residential PV + Storage EPC supply",
     "spec": "5-20kWh LFP · wall-mount/stackable · 48V · cycles &gt;6000 times",
     "cert": "",
-    "image": "image197.jpeg"
+    "image": "image197.jpeg",
+    "customerZh": "户用光储 EPC 供应",
+    "specZh": "5-20kWh LFP · 壁挂/堆叠 · 48V · 循环 >6000 次",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -474,7 +630,10 @@
     "customer": "C&I energy storage project supply",
     "spec": "50-200 kWh · Rack / Container · All-in-one PCS · Liquid cooling optional",
     "cert": "",
-    "image": "image196.jpeg"
+    "image": "image196.jpeg",
+    "customerZh": "工商业储能项目供应",
+    "specZh": "50-200kWh · 机架/集装箱 · PCS 一体 · 液冷可选",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -483,7 +642,10 @@
     "customer": "PV project engineering supply",
     "spec": "Fixed / Single / Dual axis · Galvanized steel / Aluminum · Wind-load customized",
     "cert": "",
-    "image": "image195.jpeg"
+    "image": "image195.jpeg",
+    "customerZh": "光伏项目工程供应",
+    "specZh": "固定/单轴/双轴 · 镀锌钢/铝合金 · 风载定制",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -492,7 +654,10 @@
     "customer": "Power engineering & grid contractor supply",
     "spec": "Oil-immersed / Dry-type · 10 kVA-100 MVA · 11/33/132 kV",
     "cert": "",
-    "image": "image194.jpeg"
+    "image": "image194.jpeg",
+    "customerZh": "电力工程与电网承包商供应",
+    "specZh": "油浸/干式 · 10kVA-100MVA · 11/33/132kV",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -501,7 +666,10 @@
     "customer": "Power engineering contractor supply",
     "spec": "MV 12-40.5 kV · LV 400 V · Smart monitoring",
     "cert": "",
-    "image": "image193.jpeg"
+    "image": "image193.jpeg",
+    "customerZh": "电力工程承包商供应",
+    "specZh": "中压 12-40.5kV · 低压 400V · 智能监控",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -510,7 +678,10 @@
     "customer": "Electrical component distributor supply",
     "spec": "ACB / MCCB / MCB · Contactor · 1P-4P · 10-6300 A",
     "cert": "",
-    "image": "image192.png"
+    "image": "image192.png",
+    "customerZh": "电气元件分销商供应",
+    "specZh": "ACB/MCCB/MCB · 接触器 · 1P-4P · 10A-6300A",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -519,7 +690,10 @@
     "customer": "Power engineering contractor supply",
     "spec": "MV / LV 1-35 kV · BV / BVR house wire · Copper / Aluminum core",
     "cert": "",
-    "image": "image191.png"
+    "image": "image191.png",
+    "customerZh": "电力工程承包商供应",
+    "specZh": "中低压 1-35kV · BV/BVR 家装线 · 铜/铝芯",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -528,7 +702,10 @@
     "customer": "Utility & AMI project supply",
     "spec": "Single / Three phase · Prepaid · 4G / NB-IoT · DLMS protocol",
     "cert": "",
-    "image": "image190.png"
+    "image": "image190.png",
+    "customerZh": "电力公司与 AMI 项目供应",
+    "specZh": "单相/三相 · 预付费 · 4G/NB-IoT · DLMS 协议",
+    "certZh": ""
   },
   {
     "category": "Photovoltaic & Power Equipment",
@@ -537,7 +714,10 @@
     "customer": "Power engineering & backup power supply",
     "spec": "5-2000 kVA · 50 Hz · Silent / Open frame",
     "cert": "",
-    "image": "image189.jpeg"
+    "image": "image189.jpeg",
+    "customerZh": "电力工程与备用电源供应",
+    "specZh": "5-2000kVA · 50Hz · 静音/开架",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -546,7 +726,10 @@
     "customer": "Agricultural & industrial customer supply",
     "spec": "N ≥46% · White granular · 50 kg bag / Bulk",
     "cert": "",
-    "image": "image188.jpeg"
+    "image": "image188.jpeg",
+    "customerZh": "农业与工业客户供应",
+    "specZh": "N≥46% · 白色颗粒 · 50kg 袋 / 散装",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -555,7 +738,10 @@
     "customer": "Agricultural customer supply",
     "spec": "N 18% P₂O₅ 46% · Granular · 50 kg bag · Water-soluble P ≥90%",
     "cert": "",
-    "image": "image187.jpeg"
+    "image": "image187.jpeg",
+    "customerZh": "农业客户供应",
+    "specZh": "N18% P₂O₅46% · 颗粒 · 50kg 袋 · 水溶磷 ≥90%",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -564,7 +750,10 @@
     "customer": "Agricultural customer supply",
     "spec": "15-15-15 / 20-20-0 etc. · Chlorine-based / Sulfur-based · 50 kg bag",
     "cert": "",
-    "image": "image186.png"
+    "image": "image186.png",
+    "customerZh": "农业客户供应",
+    "specZh": "15-15-15 / 20-20-0 等配方 · 氯基/硫基 · 50kg 袋",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -573,7 +762,10 @@
     "customer": "Premium agriculture & facility agriculture supply",
     "spec": "Macro / Trace elements · Powder / Liquid · 1-25 kg pack",
     "cert": "",
-    "image": "image185.png"
+    "image": "image185.png",
+    "customerZh": "高端农业与设施农业供应",
+    "specZh": "大量/中微量元素 · 粉剂/液体 · 1-25kg 包装",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -582,7 +774,10 @@
     "customer": "Plastic processing company supply",
     "spec": "Film / Injection / Blow molding · MI 0.3-50 · 25 kg bag",
     "cert": "",
-    "image": "image184.png"
+    "image": "image184.png",
+    "customerZh": "塑料加工企业供应",
+    "specZh": "薄膜/注塑/吹塑级 · MI 0.3-50 · 25kg 袋",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -591,7 +786,10 @@
     "customer": "Plastic processing company supply",
     "spec": "Homopolymer / Copolymer · Drawing / Injection / Film grade · 25 kg bag",
     "cert": "",
-    "image": "image183.png"
+    "image": "image183.png",
+    "customerZh": "塑料加工企业供应",
+    "specZh": "均聚/共聚 · 拉丝/注塑/薄膜级 · 25kg 袋",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -600,7 +798,10 @@
     "customer": "Plastic processing company supply",
     "spec": "SG3-SG8 resin powder · Pipe / Profile grade · 25 kg bag",
     "cert": "",
-    "image": "image182.png"
+    "image": "image182.png",
+    "customerZh": "塑料加工企业供应",
+    "specZh": "SG3-SG8 树脂粉 · 管材/型材级 · 25kg 袋",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -609,7 +810,10 @@
     "customer": "Daily goods brand & retailer supply",
     "spec": "Bucket / Basin / Chair / Tableware · PE / PP / PVC · Injection / Blow molding",
     "cert": "",
-    "image": "image181.jpeg"
+    "image": "image181.jpeg",
+    "customerZh": "日用品品牌方与零售商供应",
+    "specZh": "桶/盆/椅/餐具 · PE/PP/PVC · 注塑/吹塑",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -618,7 +822,10 @@
     "customer": "Construction & municipal supply",
     "spec": "PVC-U / PPR / PE · 20-630 mm · All pressure ratings",
     "cert": "",
-    "image": "image180.jpeg"
+    "image": "image180.jpeg",
+    "customerZh": "建筑工程与市政供应",
+    "specZh": "PVC-U / PPR / PE · 20-630mm · 各种压力等级",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -627,7 +834,10 @@
     "customer": "Industrial chemicals customer supply",
     "spec": "Industrial grade ≥99.9% · ISO Tank / 200 kg drum",
     "cert": "",
-    "image": "image179.jpeg"
+    "image": "image179.jpeg",
+    "customerZh": "工业化学品客户供应",
+    "specZh": "工业级 ≥99.9% · ISO Tank / 200kg 桶",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -636,7 +846,10 @@
     "customer": "Industrial chemicals customer supply",
     "spec": "Industrial / Food grade ≥99.8% · 200 kg drum / ISO Tank",
     "cert": "",
-    "image": "image178.jpeg"
+    "image": "image178.jpeg",
+    "customerZh": "工业化学品客户供应",
+    "specZh": "工业/食品级 ≥99.8% · 200kg 桶 / ISO Tank",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -645,7 +858,10 @@
     "customer": "Industrial chemicals customer supply",
     "spec": "Polymerization grade ≥99.8% · TBC inhibitor · ISO Tank",
     "cert": "",
-    "image": "image177.jpeg"
+    "image": "image177.jpeg",
+    "customerZh": "工业化学品客户供应",
+    "specZh": "聚合级 ≥99.8% · TBC 阻聚剂 · ISO Tank",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -654,7 +870,10 @@
     "customer": "Polyester & chemical fiber customer supply",
     "spec": "Polyester grade ≥99.8% · ISO Tank / Bulk water",
     "cert": "",
-    "image": "image176.jpeg"
+    "image": "image176.jpeg",
+    "customerZh": "聚酯与化纤客户供应",
+    "specZh": "聚酯级 ≥99.8% · ISO Tank / 散水",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -663,7 +882,10 @@
     "customer": "Industrial chemicals customer supply",
     "spec": "Light / Dense soda ash ≥99.2% · Caustic liquid 32-50% · Caustic flakes",
     "cert": "",
-    "image": "image175.jpeg"
+    "image": "image175.jpeg",
+    "customerZh": "工业化学品客户供应",
+    "specZh": "轻/重质纯碱 ≥99.2% · 液碱 32-50% · 片碱",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -672,7 +894,10 @@
     "customer": "Paint & plastic industry supply",
     "spec": "Rutile / Anatase · TiO₂ ≥93% · 25 kg bag",
     "cert": "",
-    "image": "image174.jpeg"
+    "image": "image174.jpeg",
+    "customerZh": "涂料与塑料工业供应",
+    "specZh": "金红石/锐钛型 · TiO₂ ≥93% · 25kg 袋",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -681,7 +906,10 @@
     "customer": "Dyeing & printing enterprise supply",
     "spec": "Polyester dyed · All colors · Powder / Granular · 25 kg drum",
     "cert": "",
-    "image": "image173.jpeg"
+    "image": "image173.jpeg",
+    "customerZh": "印染企业供应",
+    "specZh": "涤纶染色 · 各种色系 · 粉/颗粒状 · 25kg 桶",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -690,7 +918,10 @@
     "customer": "Dyeing & printing enterprise supply",
     "spec": "Cotton / Nylon / Wool dyed · 25 kg drum",
     "cert": "",
-    "image": "image172.jpeg"
+    "image": "image172.jpeg",
+    "customerZh": "印染企业供应",
+    "specZh": "棉/锦纶/羊毛染色 · 25kg 桶",
+    "certZh": ""
   },
   {
     "category": "Chemical products",
@@ -699,7 +930,10 @@
     "customer": "Construction & industrial coating supply",
     "spec": "Interior / exterior latex · Epoxy / PU · 20-200 kg drum",
     "cert": "",
-    "image": "image171.png"
+    "image": "image171.png",
+    "customerZh": "建筑与工业涂料供应",
+    "specZh": "内外墙乳胶 · 环氧/聚氨酯 · 20-200kg 桶",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -708,7 +942,10 @@
     "customer": "Construction & manufacturing customer supply",
     "spec": "1.2-25 mm · Q235B / Q345B · 900-2000 mm width",
     "cert": "",
-    "image": "image170.jpeg"
+    "image": "image170.jpeg",
+    "customerZh": "建筑与制造业客户供应",
+    "specZh": "1.2-25mm · Q235B / Q345B · 900-2000mm 宽",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -717,7 +954,10 @@
     "customer": "Auto & home-appliance manufacturing supply",
     "spec": "0.3-3.0 mm · SPCC / DC01 · Smooth bright finish",
     "cert": "",
-    "image": "image169.jpeg"
+    "image": "image169.jpeg",
+    "customerZh": "汽车与家电制造供应",
+    "specZh": "0.3-3.0mm · SPCC / DC01 · 精整光亮",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -726,7 +966,10 @@
     "customer": "Construction & automotive manufacturing supply",
     "spec": "0.3-3.0 mm · Zinc coating 60-275 g/m²",
     "cert": "",
-    "image": "image168.jpeg"
+    "image": "image168.jpeg",
+    "customerZh": "建筑与汽车制造供应",
+    "specZh": "0.3-3.0mm · 锌层 60-275g/m²",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -735,7 +978,10 @@
     "customer": "Construction & home-appliance manufacturing supply",
     "spec": "0.3-1.2 mm · PE / SMP / PVDF coating · Multi-color",
     "cert": "",
-    "image": "image167.jpeg"
+    "image": "image167.jpeg",
+    "customerZh": "建筑与家电制造供应",
+    "specZh": "0.3-1.2mm · PE / SMP / PVDF 涂层 · 多色",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -744,7 +990,10 @@
     "customer": "Premium building & PV mounting supply",
     "spec": "55% Al-Zn · AZ150 / AZ180 · High corrosion resistance",
     "cert": "",
-    "image": "image166.jpeg"
+    "image": "image166.jpeg",
+    "customerZh": "高端建筑与光伏支架供应",
+    "specZh": "55% Al-Zn · AZ150 / AZ180 · 高耐蚀",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -753,7 +1002,10 @@
     "customer": "Construction & infrastructure customer supply",
     "spec": "Φ6-32 mm · HRB400E / 500E · 12 m fixed length",
     "cert": "",
-    "image": "image165.jpeg"
+    "image": "image165.jpeg",
+    "customerZh": "建筑与基建客户供应",
+    "specZh": "Φ6-32mm · HRB400E / 500E · 12m 定尺",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -762,7 +1014,10 @@
     "customer": "Construction & infrastructure customer supply",
     "spec": "HN100-900 mm · Q235B / Q345B · 6-12 m",
     "cert": "",
-    "image": "image164.jpeg"
+    "image": "image164.jpeg",
+    "customerZh": "建筑与基建客户供应",
+    "specZh": "HN100-900mm · Q235B / Q345B · 6-12m",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -771,7 +1026,10 @@
     "customer": "Petrochemical & construction customer supply",
     "spec": "Φ21-610 mm · ERW / Spiral-welded / Seamless",
     "cert": "",
-    "image": "image163.jpeg"
+    "image": "image163.jpeg",
+    "customerZh": "石油化工与建筑客户供应",
+    "specZh": "Φ21-610mm · ERW / 螺旋焊 / 无缝",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -780,7 +1038,10 @@
     "customer": "Construction & warehousing customer supply",
     "spec": "0.3-0.8 mm substrate · YX corrugated / trapezoidal",
     "cert": "",
-    "image": "image162.jpeg"
+    "image": "image162.jpeg",
+    "customerZh": "建筑与仓储客户供应",
+    "specZh": "0.3-0.8mm 基板 · YX 波纹/梯形",
+    "certZh": ""
   },
   {
     "category": "Steel & Metal Products",
@@ -789,7 +1050,10 @@
     "customer": "Food / Chemical / Decoration industry supply",
     "spec": "304 / 316L / 201 · Cold-rolled 2B / BA",
     "cert": "",
-    "image": "image161.jpeg"
+    "image": "image161.jpeg",
+    "customerZh": "食品/化工/装饰行业供应",
+    "specZh": "304 / 316L / 201 · 冷轧 2B / BA",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -798,7 +1062,10 @@
     "customer": "Two-wheeler brand & dealer supply",
     "spec": "70 / 100 / 110 cc · 4-stroke air-cooled · 4-speed · Auto clutch",
     "cert": "",
-    "image": "image160.png"
+    "image": "image160.png",
+    "customerZh": "两轮车品牌方与经销商供应",
+    "specZh": "70 / 100 / 110cc · 四冲风冷 · 4 速 · 自动离合",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -807,7 +1074,10 @@
     "customer": "Two-wheeler brand & dealer supply",
     "spec": "125 / 150 cc · 4-stroke air-cooled · 5-speed · Electric / Kick start",
     "cert": "",
-    "image": "image159.jpeg"
+    "image": "image159.jpeg",
+    "customerZh": "两轮车品牌方与经销商供应",
+    "specZh": "125 / 150cc · 四冲风冷 · 5 速 · 电/脚启动",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -816,7 +1086,10 @@
     "customer": "Two-wheeler brand & dealer supply",
     "spec": "100 / 125 / 150 cc · CVT · Front disc / Rear drum",
     "cert": "",
-    "image": "image158.jpeg"
+    "image": "image158.jpeg",
+    "customerZh": "两轮车品牌方与经销商供应",
+    "specZh": "100 / 125 / 150cc · CVT 无级变速 · 前碟后鼓",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -825,7 +1098,10 @@
     "customer": "Premium two-wheeler brand supply",
     "spec": "150-400 cc · Liquid-cooled · 6-speed · EFI · ABS · Inverted fork",
     "cert": "",
-    "image": "image157.jpeg"
+    "image": "image157.jpeg",
+    "customerZh": "高端两轮车品牌供应",
+    "specZh": "150-400cc · 水冷 · 6 速 · 电喷 · ABS · 倒置前叉",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -834,7 +1110,10 @@
     "customer": "Premium two-wheeler brand supply",
     "spec": "250-500 cc · Liquid-cooled · Long-travel shock · ABS",
     "cert": "",
-    "image": "image265.png"
+    "image": "image265.png",
+    "customerZh": "高端两轮车品牌供应",
+    "specZh": "250-500cc · 水冷 · 长行程减震 · ABS",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -843,7 +1122,10 @@
     "customer": "Logistics & commercial customer supply",
     "spec": "150-300 cc · Cargo box 1.5-2.5 m · Payload 0.5-2 t",
     "cert": "",
-    "image": "image261.jpeg"
+    "image": "image261.jpeg",
+    "customerZh": "物流与商用客户供应",
+    "specZh": "150-300cc · 货箱 1.5-2.5m · 载重 0.5-2 吨",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -852,7 +1134,10 @@
     "customer": "Two-wheeler brand & dealer supply",
     "spec": "48 V · 350-400 W · Lead-acid / Li-ion · Range 40-80 km",
     "cert": "",
-    "image": "image258.jpeg"
+    "image": "image258.jpeg",
+    "customerZh": "两轮车品牌方与经销商供应",
+    "specZh": "48V · 350-400W · 铅酸/锂电 · 续航 40-80km",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -861,7 +1146,10 @@
     "customer": "Two-wheeler brand & dealer supply",
     "spec": "60-72 V · 800-3000 W · Range 60-120 km",
     "cert": "",
-    "image": "image255.png"
+    "image": "image255.png",
+    "customerZh": "两轮车品牌方与经销商供应",
+    "specZh": "60-72V · 800-3000W · 续航 60-120km",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -870,7 +1158,10 @@
     "customer": "Logistics & commercial customer supply",
     "spec": "48-72 V · 800-1500 W · Cargo box 1.5-2 m · Payload 300-1000 kg",
     "cert": "",
-    "image": "image252.jpeg"
+    "image": "image252.jpeg",
+    "customerZh": "物流与商用客户供应",
+    "specZh": "48-72V · 800-1500W · 货箱 1.5-2m · 载重 300-1000kg",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -879,7 +1170,10 @@
     "customer": "Passenger transport & urban transit supply",
     "spec": "48-60 V · 800-1200 W · Enclosed / Semi-enclosed · 2-6 seats",
     "cert": "",
-    "image": "image156.jpeg"
+    "image": "image156.jpeg",
+    "customerZh": "客运与城市交通供应",
+    "specZh": "48-60V · 800-1200W · 封闭/半封闭 · 2-6 座",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -888,7 +1182,10 @@
     "customer": "Two-wheeler parts brand supply",
     "spec": "2.50-17 ~ 3.50-18 · Inner & outer tube set",
     "cert": "",
-    "image": "image155.png"
+    "image": "image155.png",
+    "customerZh": "两轮车配件品牌方供应",
+    "specZh": "2.50-17 ~ 3.50-18 · 内外胎配套",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -897,7 +1194,10 @@
     "customer": "Two-wheeler parts brand supply",
     "spec": "48 V 12-32 Ah lead-acid · 48/60 V 20-40 Ah Li-ion",
     "cert": "",
-    "image": "image154.jpeg"
+    "image": "image154.jpeg",
+    "customerZh": "两轮车配件品牌方供应",
+    "specZh": "48V 12-32Ah 铅酸 · 48/60V 20-40Ah 锂电",
+    "certZh": ""
   },
   {
     "category": "Motorcycles & E-bikes",
@@ -906,7 +1206,10 @@
     "customer": "Two-wheeler parts brand supply",
     "spec": "48-72 V · 2-8 A · Three-stage smart charging",
     "cert": "",
-    "image": "image153.jpeg"
+    "image": "image153.jpeg",
+    "customerZh": "两轮车配件品牌方供应",
+    "specZh": "48-72V · 2-8A · 三段式智能充电",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -915,7 +1218,10 @@
     "customer": "Vehicle brand & dealer supply",
     "spec": "Sedan / SUV / MPV · 1.0-2.0T · Manual / Auto · LHD",
     "cert": "",
-    "image": "image152.jpeg"
+    "image": "image152.jpeg",
+    "customerZh": "汽车品牌方与经销商供应",
+    "specZh": "轿车 / SUV / MPV · 1.0-2.0T · 手动/自动 · 左舵",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -924,7 +1230,10 @@
     "customer": "NEV brand & dealer supply",
     "spec": "BEV / PHEV · Range 300-700 km · Fast charge",
     "cert": "",
-    "image": "image151.jpeg"
+    "image": "image151.jpeg",
+    "customerZh": "新能源品牌方与经销商供应",
+    "specZh": "BEV / PHEV · 续航 300-700km · 快充",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -933,7 +1242,10 @@
     "customer": "Logistics & passenger transport customer supply",
     "spec": "Light / Heavy truck 2-40 t · Diesel · LHD",
     "cert": "",
-    "image": "image150.jpeg"
+    "image": "image150.jpeg",
+    "customerZh": "物流与客运客户供应",
+    "specZh": "轻卡/重卡 2-40 吨 · 柴油 · 左舵",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -942,7 +1254,10 @@
     "customer": "Vehicle parts brand supply",
     "spec": "Car 12-20\" · Truck & bus 20-22.5\" · All-season / 4-season",
     "cert": "",
-    "image": "image149.jpeg"
+    "image": "image149.jpeg",
+    "customerZh": "汽车配件品牌方供应",
+    "specZh": "轿车 12-20 寸 · 卡客车 20-22.5 寸 · 四季/全季",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -951,7 +1266,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Ceramic / Semi-metallic · All models · OE quality",
     "cert": "",
-    "image": "image148.jpeg"
+    "image": "image148.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "陶瓷/半金属配方 · 各车型 · OE 品质",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -960,7 +1278,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Wheel hub bearing · Clutch release bearing · Tensioner",
     "cert": "",
-    "image": "image147.jpeg"
+    "image": "image147.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "轮毂轴承 · 离合器分离轴承 · 张紧轮",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -969,7 +1290,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Paper / Non-woven media · All models · Threaded / Bayonet",
     "cert": "",
-    "image": "image146.jpeg"
+    "image": "image146.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "纸质/无纺布滤材 · 各车型 · 螺纹/卡口",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -978,7 +1302,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Nickel / Platinum / Iridium · Heat range 5-9 · M10 / M12 / M14",
     "cert": "",
-    "image": "image145.jpeg"
+    "image": "image145.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "镍/铂金/铱金 · 热值 5-9 · M10 / M12 / M14",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -987,7 +1314,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Halogen / LED · Assemblies for all models · E-mark",
     "cert": "",
-    "image": "image144.jpeg"
+    "image": "image144.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "卤素 / LED · 各车型总成 · E-mark 认证",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -996,7 +1326,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Twin / Single · Hydraulic / Pneumatic · Front & rear shock for all models",
     "cert": "",
-    "image": "image143.jpeg"
+    "image": "image143.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "双筒/单筒 · 油压/气压 · 各车型前后减震",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -1005,7 +1338,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Aluminum / Copper core · Tube-and-fin / Parallel flow",
     "cert": "",
-    "image": "image142.jpeg"
+    "image": "image142.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "铝制/铜制芯体 · 管带式/平行流",
+    "certZh": ""
   },
   {
     "category": "Vehicles & parts",
@@ -1014,7 +1350,10 @@
     "customer": "Auto aftermarket & OEM supply",
     "spec": "Frameless / Framed · All sizes · Rubber / Silicone strip",
     "cert": "",
-    "image": "image141.jpeg"
+    "image": "image141.jpeg",
+    "customerZh": "汽车售后与主机配套供应",
+    "specZh": "无骨/有骨 · 各尺寸 · 橡胶/硅胶条",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1023,7 +1362,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "1-8 t · Hydraulic · Crawler / Wheeled",
     "cert": "",
-    "image": "image140.jpeg"
+    "image": "image140.jpeg",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "1-8 吨 · 液压 · 履带/轮式",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1032,7 +1374,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "10-50 t · Full hydraulic · Positive / negative flow system",
     "cert": "",
-    "image": "image139.jpeg"
+    "image": "image139.jpeg",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "10-50 吨 · 全液压 · 正/负流量系统",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1041,7 +1386,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "ZL30-ZL70 · 3-7 t · Bucket 1.7-4.5 m³",
     "cert": "",
-    "image": "image138.jpeg"
+    "image": "image138.jpeg",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "ZL30-ZL70 · 3-7 吨 · 铲斗 1.7-4.5m³",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1050,7 +1398,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "80-420 HP · Crawler · Hydraulic / Mechanical drive",
     "cert": "",
-    "image": "image137.png"
+    "image": "image137.png",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "80-420HP · 履带式 · 液力/机械传动",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1059,7 +1410,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "2-25 t · Single / Double drum / Rubber wheel · Vibration / Oscillation",
     "cert": "",
-    "image": "image136.jpeg"
+    "image": "image136.jpeg",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "2-25 吨 · 单/双钢轮/胶轮 · 振动/振荡",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1068,7 +1422,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "120-250 HP · Full hydraulic · Blade 3.7-4.3 m",
     "cert": "",
-    "image": "image135.png"
+    "image": "image135.png",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "120-250HP · 全液压 · 铲刀 3.7-4.3m",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1077,7 +1434,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "8-100 t · All-terrain / Truck-mounted · Telescopic boom",
     "cert": "",
-    "image": "image134.jpeg"
+    "image": "image134.jpeg",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "8-100 吨 · 全地面/汽车式 · 液压伸缩臂",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1086,7 +1446,10 @@
     "customer": "Construction machinery brand & contractor supply",
     "spec": "Mixing 6-18 m³ · Pump truck 28-62 m boom",
     "cert": "",
-    "image": "image133.png"
+    "image": "image133.png",
+    "customerZh": "工程机械品牌方与承包商供应",
+    "specZh": "搅拌 6-18m³ · 泵车 28-62m 臂架",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1095,7 +1458,10 @@
     "customer": "Logistics & manufacturing customer supply",
     "spec": "1-16 t · Diesel / Electric · Counterbalanced",
     "cert": "",
-    "image": "image132.png"
+    "image": "image132.png",
+    "customerZh": "物流与制造业客户供应",
+    "specZh": "1-16 吨 · 内燃/电动 · 平衡重式",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1104,7 +1470,10 @@
     "customer": "Cement & building material project supply",
     "spec": "Rotary kiln · Vertical mill · Roller press · 500-10000 t/d",
     "cert": "",
-    "image": "image131.jpeg"
+    "image": "image131.jpeg",
+    "customerZh": "水泥与建材工程项目供应",
+    "specZh": "回转窑 · 立磨 · 辊压机 · 500-10000t/d",
+    "certZh": ""
   },
   {
     "category": "Construction Machinery & Equipment",
@@ -1113,7 +1482,10 @@
     "customer": "Water & municipal customer supply",
     "spec": "Centrifugal / Submersible · 0.5-500 HP · Clean water / Sewage",
     "cert": "",
-    "image": "image130.jpeg"
+    "image": "image130.jpeg",
+    "customerZh": "水利与市政客户供应",
+    "specZh": "离心/潜水泵 · 0.5-500HP · 清水/污水",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1122,7 +1494,10 @@
     "customer": "Chemical fiber weaving enterprise supply",
     "spec": "50D-600D · Semi-dull / Full-dull · AA grade · 10-15 kg/roll",
     "cert": "",
-    "image": "image129.jpeg"
+    "image": "image129.jpeg",
+    "customerZh": "化纤织造企业供应",
+    "specZh": "50D-600D · 半光/全消光 · AA 级 · 10-15kg/卷",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1131,7 +1506,10 @@
     "customer": "Chemical fiber weaving enterprise supply",
     "spec": "30D-600D · Semi-dull / Full-dull / Bright · Triangular profile",
     "cert": "",
-    "image": "image128.jpeg"
+    "image": "image128.jpeg",
+    "customerZh": "化纤织造企业供应",
+    "specZh": "30D-600D · 半光/全消光/有光 · 三角异形截面",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1140,7 +1518,10 @@
     "customer": "Chemical fiber weaving enterprise supply",
     "spec": "50D-600D · Low / Mid / High stretch · Interlaced / Non-interlaced",
     "cert": "",
-    "image": "image127.jpeg"
+    "image": "image127.jpeg",
+    "customerZh": "化纤织造企业供应",
+    "specZh": "50D-600D · 低弹/中弹/高弹 · 网络/无网",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1149,7 +1530,10 @@
     "customer": "Spinning & non-woven enterprise supply",
     "spec": "1.2D-6D · 32-51 mm · 250 kg/bale",
     "cert": "",
-    "image": "image126.jpeg"
+    "image": "image126.jpeg",
+    "customerZh": "纺纱与非织造企业供应",
+    "specZh": "1.2D-6D · 32-51mm · 250kg/包",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1158,7 +1542,10 @@
     "customer": "Spinning & non-woven enterprise supply",
     "spec": "1.2D-2.0D · 38 mm · High-white / Standard white · 250 kg/bale",
     "cert": "",
-    "image": "image125.jpeg"
+    "image": "image125.jpeg",
+    "customerZh": "纺纱与非织造企业供应",
+    "specZh": "1.2D-2.0D · 38mm · 高白/普白 · 250kg/包",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1167,7 +1554,10 @@
     "customer": "Chemical fiber weaving enterprise supply",
     "spec": "20D-200D · Semi-dull / Full-dull / Bright · 5-8 kg/roll",
     "cert": "",
-    "image": "image124.jpeg"
+    "image": "image124.jpeg",
+    "customerZh": "化纤织造企业供应",
+    "specZh": "20D-200D · 半光/全消光/大有光 · 5-8kg/卷",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1176,7 +1566,10 @@
     "customer": "Chemical fiber weaving enterprise supply",
     "spec": "Acrylic 1.5D-6D · Spandex 20D-1120D",
     "cert": "",
-    "image": "image123.jpeg"
+    "image": "image123.jpeg",
+    "customerZh": "化纤织造企业供应",
+    "specZh": "腈纶 1.5D-6D · 氨纶 20D-1120D",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1185,7 +1578,10 @@
     "customer": "Apparel & home textile enterprise supply",
     "spec": "Plain / Twill / Satin · Width 150-280 cm · 60-300 g/m²",
     "cert": "",
-    "image": "image122.jpeg"
+    "image": "image122.jpeg",
+    "customerZh": "服装与家纺企业供应",
+    "specZh": "平纹/斜纹/缎纹 · 门幅 150-280cm · 60-300g/m²",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1194,7 +1590,10 @@
     "customer": "Apparel & home textile enterprise supply",
     "spec": "Polyester-cotton / Polyester-viscose / Polyester-nylon · All ratios · Yarn-dyed / Piece-dyed",
     "cert": "",
-    "image": "image121.jpeg"
+    "image": "image121.jpeg",
+    "customerZh": "服装与家纺企业供应",
+    "specZh": "涤棉/涤粘/锦棉 · 各种比例 · 色织/染色",
+    "certZh": ""
   },
   {
     "category": "Textile Raw Materials & Fabrics",
@@ -1203,7 +1602,10 @@
     "customer": "Hygiene & industrial customer supply",
     "spec": "Spunbond / Meltblown / Spunlace · 10-200 g/m² · 1.6-3.2 m width",
     "cert": "",
-    "image": "image120.png"
+    "image": "image120.png",
+    "customerZh": "卫材与工业客户供应",
+    "specZh": "纺粘/熔喷/水刺 · 10-200g/m² · 1.6-3.2m 幅宽",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1212,7 +1614,10 @@
     "customer": "Construction & project contractor supply",
     "spec": "600×600 / 800×800 / 600×1200 mm",
     "cert": "",
-    "image": "image119.jpeg"
+    "image": "image119.jpeg",
+    "customerZh": "建筑工程与项目承包商供应",
+    "specZh": "600×600 / 800×800 / 600×1200mm",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1221,7 +1626,10 @@
     "customer": "Construction & project contractor supply",
     "spec": "One-piece / Two-piece toilet · Counter-top / Under-counter basin · Self-cleaning glaze",
     "cert": "",
-    "image": "image118.jpeg"
+    "image": "image118.jpeg",
+    "customerZh": "建筑工程与项目承包商供应",
+    "specZh": "连体/分体马桶 · 台上/台下盆 · 自洁釉面",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1230,7 +1638,10 @@
     "customer": "Commercial construction project supply",
     "spec": "Tempered / Laminated / Low-E / Insulated · 4-12 mm",
     "cert": "",
-    "image": "image117.png"
+    "image": "image117.png",
+    "customerZh": "商业建筑工程供应",
+    "specZh": "钢化/夹胶/Low-E/中空 · 4-12mm",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1239,7 +1650,10 @@
     "customer": "Construction & door/window factory supply",
     "spec": "Thermal break / Non-thermal break · Spray / Electrophoresis / Fluorocarbon · 50-70 series",
     "cert": "",
-    "image": "image116.jpeg"
+    "image": "image116.jpeg",
+    "customerZh": "建筑工程与门窗厂供应",
+    "specZh": "断桥/非断桥 · 喷涂/电泳/氟碳 · 50-70 系列",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1248,7 +1662,10 @@
     "customer": "Construction & door/window factory supply",
     "spec": "Stainless / Zinc alloy · Knob / Lever lock · Hinge / Handle",
     "cert": "",
-    "image": "image115.jpeg"
+    "image": "image115.jpeg",
+    "customerZh": "建筑工程与门窗厂供应",
+    "specZh": "不锈钢/锌合金 · 球形/执手锁 · 合页/拉手",
+    "certZh": ""
   },
   {
     "category": "Building Materials & Construction Supplies",
@@ -1257,7 +1674,10 @@
     "customer": "Construction & decoration project supply",
     "spec": "Granite / Marble / Quartz · Countertop slab",
     "cert": "",
-    "image": "image114.jpeg"
+    "image": "image114.jpeg",
+    "customerZh": "建筑工程与装饰项目供应",
+    "specZh": "花岗岩/大理石/石英石 · 台面板材",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1266,7 +1686,10 @@
     "customer": "Furniture brand & chain retail supply",
     "spec": "Wardrobe / Bed / Desk · MDF / Particle board · Flat-pack",
     "cert": "",
-    "image": "image113.jpeg"
+    "image": "image113.jpeg",
+    "customerZh": "家具品牌方与连锁零售供应",
+    "specZh": "衣柜/床/书桌 · MDF / 颗粒板 · 拆装平板包装",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1275,7 +1698,10 @@
     "customer": "Furniture brand & chain retail supply",
     "spec": "Steel tube folding table & chair / Cot · Baked enamel / Electroplated",
     "cert": "",
-    "image": "image112.jpeg"
+    "image": "image112.jpeg",
+    "customerZh": "家具品牌方与连锁零售供应",
+    "specZh": "钢管折叠桌椅/行军床 · 烤漆/电镀",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1284,7 +1710,10 @@
     "customer": "Office furniture brand & enterprise procurement supply",
     "spec": "Office desk & chair / File cabinet / Partition · Ergonomic chair",
     "cert": "",
-    "image": "image111.jpeg"
+    "image": "image111.jpeg",
+    "customerZh": "办公家具品牌方与企业采购供应",
+    "specZh": "办公桌椅/文件柜/屏风 · 人体工学椅",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1293,7 +1722,10 @@
     "customer": "Kitchen & bath brand & engineering project supply",
     "spec": "Stainless sink · Copper / SS faucet · Shower set",
     "cert": "",
-    "image": "image110.jpeg"
+    "image": "image110.jpeg",
+    "customerZh": "厨卫品牌方与工程项目供应",
+    "specZh": "不锈钢水槽 · 铜/不锈钢龙头 · 花洒套件",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1302,7 +1734,10 @@
     "customer": "Cookware brand & chain retail supply",
     "spec": "Aluminum / Stainless · Wok / Stockpot / Fry pan · Non-stick coating",
     "cert": "",
-    "image": "image109.jpeg"
+    "image": "image109.jpeg",
+    "customerZh": "厨具品牌方与连锁零售供应",
+    "specZh": "铝合金/不锈钢 · 炒锅/汤锅/煎锅 · 不粘涂层",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1311,7 +1746,10 @@
     "customer": "Stationery brand & office procurement supply",
     "spec": "Pen / Notebook / Folder / Stapler · Student / Office",
     "cert": "",
-    "image": "image108.jpeg"
+    "image": "image108.jpeg",
+    "customerZh": "文具品牌方与办公采购供应",
+    "specZh": "笔/本/文件夹/订书机 · 学生/办公",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1320,7 +1758,10 @@
     "customer": "Bag & luggage brand & chain retail supply",
     "spec": "Trolley 18-28\" · Backpack · ABS / PC / Oxford",
     "cert": "",
-    "image": "image107.jpeg"
+    "image": "image107.jpeg",
+    "customerZh": "箱包品牌方与连锁零售供应",
+    "specZh": "拉杆箱 18-28 寸 · 双肩包 · ABS / PC / 牛津布",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1329,7 +1770,10 @@
     "customer": "Beauty brand OEM supply",
     "spec": "Skincare / Makeup · Halal certified · Small & medium size",
     "cert": "",
-    "image": "image106.jpeg"
+    "image": "image106.jpeg",
+    "customerZh": "美妆品牌方 OEM 供应",
+    "specZh": "护肤品/彩妆 · 清真 Halal 认证 · 中小规格",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1338,7 +1782,10 @@
     "customer": "Watch brand & chain retail supply",
     "spec": "Quartz / Mechanical/smart · pointer / digital display",
     "cert": "",
-    "image": "image105.jpeg"
+    "image": "image105.jpeg",
+    "customerZh": "钟表品牌方与连锁零售供应",
+    "specZh": "石英/机械/智能 · 指针/数字显示",
+    "certZh": ""
   },
   {
     "category": "Household & daily goods",
@@ -1347,7 +1794,10 @@
     "customer": "Toy brand & chain retail supply",
     "spec": "Plastic / Plush / RC / Educational · 3+ / EN71",
     "cert": "",
-    "image": "image104.jpeg"
+    "image": "image104.jpeg",
+    "customerZh": "玩具品牌方与连锁零售供应",
+    "specZh": "塑料/毛绒/遥控/益智 · 3+认证 / EN71",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1356,7 +1806,10 @@
     "customer": "Lighting brand & engineering project supply",
     "spec": "E27 / B22 · 3-40 W · 3000-6500 K · 230V",
     "cert": "",
-    "image": "image103.jpeg"
+    "image": "image103.jpeg",
+    "customerZh": "照明品牌方与工程项目供应",
+    "specZh": "E27 / B22 · 3-40W · 3000-6500K · 230V",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1365,7 +1818,10 @@
     "customer": "Lighting brand & engineering project supply",
     "spec": "T5 / T8 · 600×600 / 300×1200 mm · 18-72 W",
     "cert": "",
-    "image": "image102.png"
+    "image": "image102.png",
+    "customerZh": "照明品牌方与工程项目供应",
+    "specZh": "T5 / T8 · 600×600 / 300×1200mm · 18-72W",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1374,7 +1830,10 @@
     "customer": "Outdoor & municipal engineering project supply",
     "spec": "15-200 W · Li-ion battery · Light + timer control · IP65",
     "cert": "",
-    "image": "image101.jpeg"
+    "image": "image101.jpeg",
+    "customerZh": "户外与市政工程项目供应",
+    "specZh": "15-200W · 锂电池 · 光控+时控 · IP65",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1383,7 +1842,10 @@
     "customer": "Industrial lighting & engineering project supply",
     "spec": "30-500 W · IP65 / IP66 · Die-cast aluminum heatsink",
     "cert": "",
-    "image": "image100.jpeg"
+    "image": "image100.jpeg",
+    "customerZh": "工业照明与工程项目供应",
+    "specZh": "30-500W · IP65 / IP66 · 压铸铝散热",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1392,7 +1854,10 @@
     "customer": "Decorative lighting brand & engineering project supply",
     "spec": "Home / Engineering decor · E14 / E27 · 230V",
     "cert": "",
-    "image": "image99.jpeg"
+    "image": "image99.jpeg",
+    "customerZh": "装饰照明品牌方与工程项目供应",
+    "specZh": "家用/工程装饰 · E14 / E27 · 230V",
+    "certZh": ""
   },
   {
     "category": "Lighting & lamps",
@@ -1401,7 +1866,10 @@
     "customer": "Fire & public safety project supply",
     "spec": "LED rechargeable · Li-ion / Lead-acid · Emergency ≥90 min",
     "cert": "",
-    "image": "image98.jpeg"
+    "image": "image98.jpeg",
+    "customerZh": "消防与公共安全项目供应",
+    "specZh": "LED 充电式 · 锂电/铅酸 · 应急 ≥90min",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1410,7 +1878,10 @@
     "customer": "Generic drug & veterinary factory supply",
     "spec": "Antibiotic / Antipyretic / Vitamin · USP / BP / EP standard",
     "cert": "",
-    "image": "image97.png"
+    "image": "image97.png",
+    "customerZh": "仿制药企与兽药厂供应",
+    "specZh": "抗生素/解热镇痛/维生素 · USP / BP / EP 标准",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1419,7 +1890,10 @@
     "customer": "Medical institution & medical device brand supply",
     "spec": "1-50 ml · Disposable sterile · 3-piece set · EO sterilized",
     "cert": "",
-    "image": "image96.jpeg"
+    "image": "image96.jpeg",
+    "customerZh": "医疗机构与医疗器械品牌供应",
+    "specZh": "1-50ml · 一次性无菌 · 三件套 · EO 灭菌",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1428,7 +1902,10 @@
     "customer": "Medical institution & government procurement supply",
     "spec": "Flat / Head-worn · N95 / KN95 · Meltblown · BFE ≥95%",
     "cert": "",
-    "image": "image95.png"
+    "image": "image95.png",
+    "customerZh": "医疗机构与政府采购供应",
+    "specZh": "平面/头戴式 · N95 / KN95 · 熔喷布 · BFE ≥95%",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1437,7 +1914,10 @@
     "customer": "Medical institution & diagnostic brand supply",
     "spec": "Blood glucose / Early pregnancy / Infectious disease · Colloidal gold / Fluorescence immunoassay",
     "cert": "",
-    "image": "image94.png"
+    "image": "image94.png",
+    "customerZh": "医疗机构与诊断品牌供应",
+    "specZh": "血糖/早孕/传染病 · 胶体金/荧光免疫",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1446,7 +1926,10 @@
     "customer": "Medical institution & home medical device brand supply",
     "spec": "Digital BP · IR thermometer · Fingertip oximeter",
     "cert": "",
-    "image": "image93.jpeg"
+    "image": "image93.jpeg",
+    "customerZh": "医疗机构与家用医疗器械品牌供应",
+    "specZh": "电子血压计 · 红外体温计 · 指夹血氧仪",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1455,7 +1938,10 @@
     "customer": "Hospital & medical institution project supply",
     "spec": "Manual / Electric · Stainless / Powder-coated · Triple-crank / Five-crank",
     "cert": "",
-    "image": "image92.png"
+    "image": "image92.png",
+    "customerZh": "医院与医疗机构项目供应",
+    "specZh": "手动/电动 · 不锈钢/喷塑 · 三摇/五摇",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1464,7 +1950,10 @@
     "customer": "Hospital & medical device brand supply",
     "spec": "Stainless instrument · Absorbable / Non-absorbable suture",
     "cert": "",
-    "image": "image91.png"
+    "image": "image91.png",
+    "customerZh": "医院与医疗器械品牌供应",
+    "specZh": "不锈钢器械 · 可吸收/不可吸收缝合线",
+    "certZh": ""
   },
   {
     "category": "Medical Devices & Pharmaceuticals",
@@ -1473,7 +1962,10 @@
     "customer": "Pharma distribution & government procurement supply",
     "spec": "Antibiotic / Antihypertensive / Antidiabetic · Tablet / Capsule / Injection",
     "cert": "",
-    "image": "image90.jpeg"
+    "image": "image90.jpeg",
+    "customerZh": "医药分销与政府采购供应",
+    "specZh": "抗生素/降压/降糖 · 片剂/胶囊/注射剂",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1482,7 +1974,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "S / M / L / XL · Ultra-thin breathable · SAP core · Economic pack",
     "cert": "",
-    "image": "image89.jpeg"
+    "image": "image89.jpeg",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "S / M / L / XL · 超薄透气 · SAP 芯体 · 经济装",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1491,7 +1986,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "80 pcs/pack · Alcohol-free · EDI pure water · Halal",
     "cert": "",
-    "image": "image88.jpeg"
+    "image": "image88.jpeg",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "80 片/包 · 无酒精 · EDI 纯水 · Halal 认证",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1500,7 +1998,10 @@
     "customer": "Mother-baby brand OEM supply",
     "spec": "2-in-1 shampoo & body wash · Lotion · Tear-free",
     "cert": "",
-    "image": "image87.png"
+    "image": "image87.png",
+    "customerZh": "母婴品牌方 OEM 供应",
+    "specZh": "洗发沐浴二合一 · 润肤乳 · 无泪配方",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1509,7 +2010,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "PP / PPSU bottle · Silicone nipple · Straw cup",
     "cert": "",
-    "image": "image86.png"
+    "image": "image86.png",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "PP / PPSU 奶瓶 · 硅胶奶嘴 · 吸管杯",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1518,7 +2022,10 @@
     "customer": "Baby clothing brand & chain procurement supply",
     "spec": "Pure cotton / Organic cotton · Ages 0-3 / 3-12 · Class A standard",
     "cert": "",
-    "image": "image85.jpeg"
+    "image": "image85.jpeg",
+    "customerZh": "婴童服饰品牌方与连锁采购供应",
+    "specZh": "纯棉/有机棉 · 0-3 岁/3-12 岁 · A 类标准",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1527,7 +2034,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "Lightweight foldable · Car seat 0-36 kg · ECE certified",
     "cert": "",
-    "image": "image84.png"
+    "image": "image84.png",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "轻便可折叠 · 安全座椅 0-36kg · ECE 认证",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1536,7 +2046,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "Solid wood / Pine · Foldable · Multi-level · Playpen",
     "cert": "",
-    "image": "image83.jpeg"
+    "image": "image83.jpeg",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "实木/松木 · 可折叠 · 多档高度 · 游戏围栏",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1545,7 +2058,10 @@
     "customer": "Mother-baby brand & chain procurement supply",
     "spec": "Bluetooth music · Multi-mode swing · USB charge",
     "cert": "",
-    "image": "image82.jpeg"
+    "image": "image82.jpeg",
+    "customerZh": "母婴品牌方与连锁采购供应",
+    "specZh": "蓝牙音乐 · 多档摆幅 · USB 充电",
+    "certZh": ""
   },
   {
     "category": "Baby & Children Products & Toys",
@@ -1554,7 +2070,10 @@
     "customer": "Mother-baby & education brand supply",
     "spec": "Blocks / Puzzles / Picture books / Reading pen · Montessori · Ages 0-6",
     "cert": "",
-    "image": "image81.jpeg"
+    "image": "image81.jpeg",
+    "customerZh": "母婴与教育品牌方供应",
+    "specZh": "积木/拼图/绘本/点读笔 · 蒙特梭利 · 0-6 岁",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1563,7 +2082,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "25-100 HP · Diesel · 4WD optional · PTO",
     "cert": "",
-    "image": "image80.jpeg"
+    "image": "image80.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "25-100HP · 柴油 · 四驱可选 · PTO 动力输出",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1572,7 +2094,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "8-15 HP · Diesel · Two-wheel · Belt drive",
     "cert": "",
-    "image": "image79.jpeg"
+    "image": "image79.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "8-15HP · 柴油 · 两轮 · 皮带传动",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1581,7 +2106,10 @@
     "customer": "Farm machinery & equipment manufacturing supply",
     "spec": "5-50 HP · Single / Multi-cylinder · Water / Air cooled",
     "cert": "",
-    "image": "image78.jpeg"
+    "image": "image78.jpeg",
+    "customerZh": "农机与设备制造供应",
+    "specZh": "5-50HP · 单/多缸 · 水冷/风冷",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1590,7 +2118,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "For tractor · 1-5 plow bottoms · Depth 15-30 cm",
     "cert": "",
-    "image": "image77.jpeg"
+    "image": "image77.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "配拖拉机 · 1-5 铧 · 耕深 15-30cm",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1599,7 +2130,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "For tractor · Width 1.5-5 m",
     "cert": "",
-    "image": "image76.jpeg"
+    "image": "image76.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "配拖拉机 · 幅宽 1.5-5m",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1608,7 +2142,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "Wheat / Corn / Cotton · 2-12 rows · Integrated fertilization",
     "cert": "",
-    "image": "image75.jpeg"
+    "image": "image75.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "小麦/玉米/棉花 · 2-12 行 · 施肥一体",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1617,7 +2154,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "Rice-wheat / Corn · Throughput 2-8 kg/s",
     "cert": "",
-    "image": "image74.jpeg"
+    "image": "image74.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "稻麦两用/玉米 · 喂入量 2-8kg/s",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1626,7 +2166,10 @@
     "customer": "Farm machinery brand & agricultural contractor supply",
     "spec": "smallelectric / diesel · home/commercial",
     "cert": "",
-    "image": "image73.jpeg"
+    "image": "image73.jpeg",
+    "customerZh": "农机品牌方与农业承包商供应",
+    "specZh": "小型电动/柴油 · 家用/商用",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1635,7 +2178,10 @@
     "customer": "Grain processing customer supply",
     "spec": "Small combined · Paddy → white rice in one pass",
     "cert": "",
-    "image": "image72.jpeg"
+    "image": "image72.jpeg",
+    "customerZh": "粮食加工客户供应",
+    "specZh": "小型组合式 · 稻谷→精米一次完成",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1644,7 +2190,10 @@
     "customer": "livestock & feed processing customer supply",
     "spec": "Hammer mill · 1-20 t/h · Electric / Diesel",
     "cert": "",
-    "image": "image71.jpeg"
+    "image": "image71.jpeg",
+    "customerZh": "畜牧与饲料加工客户供应",
+    "specZh": "锤片式 · 1-20 吨/时 · 电动/柴油",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1653,7 +2202,10 @@
     "customer": "Agricultural & horticultural customer supply",
     "spec": "16-20 L · Manual / Li-ion · All nozzle types",
     "cert": "",
-    "image": "image266.png"
+    "image": "image266.png",
+    "customerZh": "农业与园艺客户供应",
+    "specZh": "16-20L · 手动/锂电 · 各种喷头",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1662,7 +2214,10 @@
     "customer": "Large farm & agricultural contractor supply",
     "spec": "200-2000 L · Tractor-pulled · Boom 6-24 m",
     "cert": "",
-    "image": "image262.jpeg"
+    "image": "image262.jpeg",
+    "customerZh": "大型农场与农业承包商供应",
+    "specZh": "200-2000L · 拖拉机牵引 · 喷幅 6-24m",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1671,7 +2226,10 @@
     "customer": "Agricultural & horticultural irrigation project supply",
     "spec": "Drip tape & fittings · Micro-sprinkler / Impact sprinkler",
     "cert": "",
-    "image": "image259.jpeg"
+    "image": "image259.jpeg",
+    "customerZh": "农业与园艺灌溉项目供应",
+    "specZh": "滴灌管带 + 首部 · 微喷/摇臂喷头",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1680,7 +2238,10 @@
     "customer": "Agricultural irrigation & water supply",
     "spec": "0.5-50 HP · Clean water / Sewage · Cast iron / Stainless",
     "cert": "",
-    "image": "image256.jpeg"
+    "image": "image256.jpeg",
+    "customerZh": "农业灌溉与水利供应",
+    "specZh": "0.5-50HP · 清水/污水 · 铸铁/不锈钢",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1689,7 +2250,10 @@
     "customer": "Farm machinery aftermarket & parts brand supply",
     "spec": "Fits all brands · Aftermarket parts",
     "cert": "",
-    "image": "image253.jpeg"
+    "image": "image253.jpeg",
+    "customerZh": "农机售后与配件品牌供应",
+    "specZh": "各品牌适配 · 售后维修件",
+    "certZh": ""
   },
   {
     "category": "Agricultural Machinery & Tools",
@@ -1698,7 +2262,10 @@
     "customer": "Agricultural & horticultural customer supply",
     "spec": "Carbon steel / Mn steel forged · All specifications",
     "cert": "",
-    "image": "image250.jpeg"
+    "image": "image250.jpeg",
+    "customerZh": "农业与园艺客户供应",
+    "specZh": "碳钢/锰钢锻造 · 各种规格",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1707,7 +2274,10 @@
     "customer": "Importer & brand supply",
     "spec": "Keemun / Lapsang / Assam blend · Bulk 25-50 kg bag · CTC / Orthodox",
     "cert": "",
-    "image": "image247.jpeg"
+    "image": "image247.jpeg",
+    "customerZh": "进口商与品牌方供应",
+    "specZh": "祁门红茶 / 正山小种 / 阿萨姆拼配 · 散装 25-50kg 袋 · CTC/传统条形",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1716,7 +2286,10 @@
     "customer": "Importer supply",
     "spec": "Gunpowder / Chunmee / Sencha · Bulk 25-50 kg bag",
     "cert": "",
-    "image": "image245.jpeg"
+    "image": "image245.jpeg",
+    "customerZh": "进口商供应",
+    "specZh": "珠茶 / 眉茶 / 煎茶 · 散装 25-50kg 袋",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1725,7 +2298,10 @@
     "customer": "Premium market & Chinese channel supply",
     "spec": "Tieguanyin / Dong Ding Oolong · Vacuum pack · 250 g-1 kg",
     "cert": "",
-    "image": "image243.jpeg"
+    "image": "image243.jpeg",
+    "customerZh": "高端市场与华人渠道供应",
+    "specZh": "铁观音 / 冻顶乌龙 · 真空小包装 · 250g-1kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1734,7 +2310,10 @@
     "customer": "Premium market & gift box supply",
     "spec": "357 g cake / Loose · Mainly ripe · 5-10 years aged",
     "cert": "",
-    "image": "image241.jpeg"
+    "image": "image241.jpeg",
+    "customerZh": "高端市场与礼盒供应",
+    "specZh": "357g 茶饼 / 散茶 · 熟茶为主 · 5-10 年陈",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1743,7 +2322,10 @@
     "customer": "Supermarket & office channel supply",
     "spec": "Single / Double chamber sachet · 2 g × 20-50 bags · Foil outer pack",
     "cert": "",
-    "image": "image239.jpeg"
+    "image": "image239.jpeg",
+    "customerZh": "商超与办公渠道供应",
+    "specZh": "单室/双室袋泡 · 2g × 20-50 包 · 铝箔外包装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1752,7 +2334,10 @@
     "customer": "Brand & channel distributor supply",
     "spec": "CTC black tea base + milk powder + sugar · 400 g-1 kg foil bag · Adjustable sweetness",
     "cert": "",
-    "image": "image237.jpeg"
+    "image": "image237.jpeg",
+    "customerZh": "品牌方与渠道商供应",
+    "specZh": "CTC 红茶底 + 奶粉 + 糖 · 400g-1kg 铝箔袋 · 可调甜度",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1761,7 +2346,10 @@
     "customer": "Food factory & milk tea shop supply",
     "spec": "Instant black tea powder 1-25 kg · Non-dairy creamer · Industrial bulk",
     "cert": "",
-    "image": "image235.jpeg"
+    "image": "image235.jpeg",
+    "customerZh": "食品厂与奶茶店供应",
+    "specZh": "速溶红茶粉 1-25kg · 植脂奶精粉 · 工业级散装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1770,7 +2358,10 @@
     "customer": "Importer supply",
     "spec": "Jasmine Tea · Bulk 25-50 kg bag",
     "cert": "",
-    "image": "image233.jpeg"
+    "image": "image233.jpeg",
+    "customerZh": "进口商供应",
+    "specZh": "茉莉花茶 · 散装 25-50kg 袋",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1779,7 +2370,10 @@
     "customer": "Premium market supply",
     "spec": "Shoumei / White Peony · 100-500 g gift box",
     "cert": "",
-    "image": "image70.jpeg"
+    "image": "image70.jpeg",
+    "customerZh": "高端市场供应",
+    "specZh": "寿眉 / 白牡丹 · 100g-500g 礼盒",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1788,7 +2382,10 @@
     "customer": "Chinese market & premium retail supply",
     "spec": "310 ml can / 250 ml box · Herbal tea concentrate / RTD",
     "cert": "",
-    "image": "image69.png"
+    "image": "image69.png",
+    "customerZh": "华人市场与高端零售供应",
+    "specZh": "310ml 罐装 / 250ml 盒装 · 凉茶浓缩液/即饮",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1797,7 +2394,10 @@
     "customer": "Premium gift channel supply",
     "spec": "Yixing teapot / Gaiwan / Tea tray · Gift box",
     "cert": "",
-    "image": "image68.jpeg"
+    "image": "image68.jpeg",
+    "customerZh": "高端礼品渠道供应",
+    "specZh": "紫砂壶 / 盖碗 / 茶盘 · 礼盒包装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1806,7 +2406,10 @@
     "customer": "Importer & channel supply",
     "spec": "Liubao / Fu Brick · 500 g-2 kg pressed",
     "cert": "",
-    "image": "image67.jpeg"
+    "image": "image67.jpeg",
+    "customerZh": "进口商与渠道供应",
+    "specZh": "六堡茶 / 茯砖茶 · 500g-2kg 紧压",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1815,7 +2418,10 @@
     "customer": "Premium supermarket & hotel supply",
     "spec": "Bergamot flavoring / English blend · 100-500 g can",
     "cert": "",
-    "image": "image66.jpeg"
+    "image": "image66.jpeg",
+    "customerZh": "高端商超与酒店供应",
+    "specZh": "佛手柑调味 / 拼配英式 · 100g-500g 罐装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1824,7 +2430,10 @@
     "customer": "Food factory & brand supply",
     "spec": "Dark / Light · 500 ml-5 L bottle / 25 L drum",
     "cert": "",
-    "image": "image65.jpeg"
+    "image": "image65.jpeg",
+    "customerZh": "食品厂与品牌方供应",
+    "specZh": "老抽/生抽 · 500ml-5L 瓶装 / 25L 桶装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1833,7 +2442,10 @@
     "customer": "Food factory & retail supply",
     "spec": "Rice / Aged / White vinegar · 500 ml-5 L",
     "cert": "",
-    "image": "image64.jpeg"
+    "image": "image64.jpeg",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "米醋 / 陈醋 / 白醋 · 500ml-5L",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1842,7 +2454,10 @@
     "customer": "Food factory & catering supply",
     "spec": "Pixian doubanjiang / Korean gochujang / Thai sweet chili · 200 g-5 kg",
     "cert": "",
-    "image": "image63.jpeg"
+    "image": "image63.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "郫县豆瓣 / 韩式辣酱 / 泰式甜辣 · 200g-5kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1851,7 +2466,10 @@
     "customer": "Food factory & retail supply",
     "spec": "Tomato paste 28-30% · 300 g-5 kg can / bag",
     "cert": "",
-    "image": "image62.png"
+    "image": "image62.png",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "番茄酱 28-30% · 300g-5kg 罐装 / 袋装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1860,7 +2478,10 @@
     "customer": "Catering & food factory supply",
     "spec": "Oyster / Abalone sauce · 510 g-5 kg",
     "cert": "",
-    "image": "image61.jpeg"
+    "image": "image61.jpeg",
+    "customerZh": "餐饮与食品厂供应",
+    "specZh": "蚝油 / 鲍鱼汁 · 510g-5kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1869,7 +2490,10 @@
     "customer": "Catering channel supply",
     "spec": "Satay / Korean BBQ / Marinade · 200 g-2 kg",
     "cert": "",
-    "image": "image60.jpeg"
+    "image": "image60.jpeg",
+    "customerZh": "餐饮渠道供应",
+    "specZh": "沙茶酱 / 韩式烧烤酱 / 烧烤腌料 · 200g-2kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1878,7 +2502,10 @@
     "customer": "Food factory & household supply",
     "spec": "Chicken bouillon 100 g-1 kg · MSG 100 g-25 kg",
     "cert": "",
-    "image": "image59.jpeg"
+    "image": "image59.jpeg",
+    "customerZh": "食品厂与家庭消费供应",
+    "specZh": "鸡精 100g-1kg · 味精 100g-25kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1887,7 +2514,10 @@
     "customer": "Food factory & catering supply",
     "spec": "Concentrated chicken broth 1-5 kg · Stock paste · Powder / Liquid",
     "cert": "",
-    "image": "image58.jpeg"
+    "image": "image58.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "浓缩鸡汁 1-5kg · 高汤膏 · 粉末/液体",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1896,7 +2526,10 @@
     "customer": "Food factory & catering supply",
     "spec": "Japanese curry block / Indian curry powder / Thai green curry · 100 g-2 kg",
     "cert": "",
-    "image": "image57.jpeg"
+    "image": "image57.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "日式咖喱块 / 印度咖喱粉 / 泰式绿咖喱 · 100g-2kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1905,7 +2538,10 @@
     "customer": "Food factory supply",
     "spec": "Spice pack 30-100 g × multi-pack · Broth 500 ml-2 L",
     "cert": "",
-    "image": "image56.jpeg"
+    "image": "image56.jpeg",
+    "customerZh": "食品厂供应",
+    "specZh": "卤料包 30-100g × 多包 · 卤水汁 500ml-2L",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1914,7 +2550,10 @@
     "customer": "Chinese market & catering supply",
     "spec": "Spicy / Mushroom / Tomato · 200 g-2 kg · Beef tallow / Vegetable oil",
     "cert": "",
-    "image": "image55.jpeg"
+    "image": "image55.jpeg",
+    "customerZh": "华人市场与餐饮供应",
+    "specZh": "麻辣 / 菌汤 / 番茄 · 200g-2kg · 牛油/清油",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1923,7 +2562,10 @@
     "customer": "Catering supply",
     "spec": "Seafood / Chu Hou / Spare rib paste · 200 g-2 kg",
     "cert": "",
-    "image": "image54.jpeg"
+    "image": "image54.jpeg",
+    "customerZh": "餐饮供应",
+    "specZh": "海鲜酱 / 柱侯酱 / 排骨酱 · 200g-2kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1932,7 +2574,10 @@
     "customer": "Catering & food factory supply",
     "spec": "Concentrated OJ 65°Brix · Concentrated apple juice · 25-200 kg drum",
     "cert": "",
-    "image": "image53.jpeg"
+    "image": "image53.jpeg",
+    "customerZh": "餐饮与食品厂供应",
+    "specZh": "浓缩橙汁 65°Brix · 浓缩苹果汁 · 25-200kg 桶装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1941,7 +2586,10 @@
     "customer": "Chinese market & catering supply",
     "spec": "Sour plum concentrate · Herbal tea concentrate · 1-25 kg · Dilute 5-10×",
     "cert": "",
-    "image": "image52.jpeg"
+    "image": "image52.jpeg",
+    "customerZh": "华人市场与餐饮供应",
+    "specZh": "酸梅汤浓缩液 · 凉茶浓缩 · 1-25kg · 兑水 5-10 倍",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1950,7 +2598,10 @@
     "customer": "Food factory supply",
     "spec": "Salt-bake powder / Marinade powder · 1-25 kg industrial pack",
     "cert": "",
-    "image": "image51.jpeg"
+    "image": "image51.jpeg",
+    "customerZh": "食品厂供应",
+    "specZh": "盐焗粉 / 卤水粉 / 腌料 · 1-25kg 工业装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1959,7 +2610,10 @@
     "customer": "Importer & supermarket supply",
     "spec": "Bag 80-100 g · Drum 110-130 g · Various flavors",
     "cert": "",
-    "image": "image50.jpeg"
+    "image": "image50.jpeg",
+    "customerZh": "进口商与商超供应",
+    "specZh": "袋装 80-100g · 桶装 110-130g · 多口味",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1968,7 +2622,10 @@
     "customer": "Chinese market & premium retail supply",
     "spec": "Self-heating rice 300-450 g · Self-heating hot pot 400-600 g",
     "cert": "",
-    "image": "image49.jpeg"
+    "image": "image49.jpeg",
+    "customerZh": "华人市场与高端零售供应",
+    "specZh": "自热米饭 300-450g · 自热火锅 400-600g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1977,7 +2634,10 @@
     "customer": "Food factory & retail supply",
     "spec": "Instant soup 30-50 g × multi-pack · Instant porridge 35-50 g",
     "cert": "",
-    "image": "image48.jpeg"
+    "image": "image48.jpeg",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "速溶汤料 30-50g × 多包 · 即食粥 35-50g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1986,7 +2646,10 @@
     "customer": "Chinese market & retail supply",
     "spec": "Frozen dumplings 400-1000 g · All fillings · -18°C cold chain",
     "cert": "",
-    "image": "image47.jpeg"
+    "image": "image47.jpeg",
+    "customerZh": "华人市场与零售供应",
+    "specZh": "冷冻水饺 400-1000g · 多种馅料 · -18°C 冷链",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -1995,7 +2658,10 @@
     "customer": "Chinese market supply",
     "spec": "Frozen baozi 400-1000 g · Red bean / Pork / Veg · Mantou 600-1200 g",
     "cert": "",
-    "image": "image46.jpeg"
+    "image": "image46.jpeg",
+    "customerZh": "华人市场供应",
+    "specZh": "冷冻包子 400-1000g · 豆沙/鲜肉/素菜 · 馒头 600-1200g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2004,7 +2670,10 @@
     "customer": "Catering & retail supply",
     "spec": "Frozen spring roll 600-1000 g · Wonton 400-800 g",
     "cert": "",
-    "image": "image45.jpeg"
+    "image": "image45.jpeg",
+    "customerZh": "餐饮与零售供应",
+    "specZh": "冷冻春卷 600-1000g · 馄饨 400-800g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2013,7 +2682,10 @@
     "customer": "Food factory & retail supply",
     "spec": "Instant vermicelli 80-120 g · Rice noodle 80-120 g · Cup / Bag",
     "cert": "",
-    "image": "image44.jpeg"
+    "image": "image44.jpeg",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "速食粉丝 80-120g · 米线 80-120g · 桶装/袋装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2022,7 +2694,10 @@
     "customer": "Retail supply",
     "spec": "Pour-over rice 100-200 g · With seasoning · 5 min ready",
     "cert": "",
-    "image": "image43.jpeg"
+    "image": "image43.jpeg",
+    "customerZh": "零售供应",
+    "specZh": "冲泡米饭 100-200g · 自带调料包 · 5 分钟即食",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2031,7 +2706,10 @@
     "customer": "Office & retail supply",
     "spec": "3-in-1 20-30 g · Black instant 1.8-3 g · 20-100 sticks/box",
     "cert": "",
-    "image": "image42.jpeg"
+    "image": "image42.jpeg",
+    "customerZh": "办公与零售供应",
+    "specZh": "三合一 20-30g · 速溶黑咖啡 1.8-3g · 20-100 条/盒",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2040,7 +2718,10 @@
     "customer": "Importer & retail supply",
     "spec": "Whole milk / Skim · 400 g-1.6 kg can",
     "cert": "",
-    "image": "image41.png"
+    "image": "image41.png",
+    "customerZh": "进口商与零售供应",
+    "specZh": "全脂 / 脱脂 · 400g-1.6kg 罐装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2049,7 +2730,10 @@
     "customer": "Retail supply",
     "spec": "Instant oatmeal 400-800 g · Mixed grains · 30 sec ready",
     "cert": "",
-    "image": "image40.jpeg"
+    "image": "image40.jpeg",
+    "customerZh": "零售供应",
+    "specZh": "即食燕麦 400-800g · 混合谷物 · 30 秒即食",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2058,7 +2742,10 @@
     "customer": "Fitness & premium retail supply",
     "spec": "30-60 g individual pack · Various flavors · OEM custom",
     "cert": "",
-    "image": "image39.jpeg"
+    "image": "image39.jpeg",
+    "customerZh": "健身与高端零售供应",
+    "specZh": "30-60g 独立包装 · 多种口味 · OEM 定制",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2067,7 +2754,10 @@
     "customer": "Supermarket & wholesale market supply",
     "spec": "Fruit hard candy · Bulk 1-5 kg bag · Individually wrapped",
     "cert": "",
-    "image": "image38.jpeg"
+    "image": "image38.jpeg",
+    "customerZh": "商超与批发市场供应",
+    "specZh": "水果硬糖 · 散装 1-5kg 袋 · 独立小包装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2076,7 +2766,10 @@
     "customer": "Supermarket supply",
     "spec": "QQ gummy 100-500 g · Jelly 12-48 cups/pack",
     "cert": "",
-    "image": "image37.jpeg"
+    "image": "image37.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "QQ 糖 100-500g · 果冻 12-48 杯/包",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2085,7 +2778,10 @@
     "customer": "Supermarket supply",
     "spec": "10-25 g individual pack · Fruit / Milk / Mint",
     "cert": "",
-    "image": "image36.jpeg"
+    "image": "image36.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "10-25g 独立包装 · 水果/牛奶/薄荷",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2094,7 +2790,10 @@
     "customer": "Supermarket supply",
     "spec": "Traditional milk candy · Bulk / Bag · 250 g-1 kg",
     "cert": "",
-    "image": "image35.jpeg"
+    "image": "image35.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "传统奶糖 · 散装/袋装 · 250g-1kg",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2103,7 +2802,10 @@
     "customer": "Supermarket supply",
     "spec": "CBS 25-100 g · Cocoa butter 50-200 g · Multi-brand OEM",
     "cert": "",
-    "image": "image34.jpeg"
+    "image": "image34.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "代可可脂 25-100g · 可可脂 50-200g · 多品牌定制",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2112,7 +2814,10 @@
     "customer": "Food factory & retail supply",
     "spec": "Color chocolate chips 1-25 kg · Baking / Ice cream",
     "cert": "",
-    "image": "image33.jpeg"
+    "image": "image33.jpeg",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "彩色巧克力豆 1-25kg · 烘焙/冰淇淋用",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2121,7 +2826,10 @@
     "customer": "Supermarket supply",
     "spec": "Sandwich 100-300 g · Soda 100-500 g · Cookie 100-300 g",
     "cert": "",
-    "image": "image32.jpeg"
+    "image": "image32.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "夹心饼 100-300g · 苏打饼 100-500g · 曲奇 100-300g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2130,7 +2838,10 @@
     "customer": "Supermarket supply",
     "spec": "Wafer roll / Wafer block · 100-300 g · Various flavors",
     "cert": "",
-    "image": "image31.jpeg"
+    "image": "image31.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "威化卷/威化方块 · 100-300g · 多口味",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2139,7 +2850,10 @@
     "customer": "Supermarket supply",
     "spec": "Pre-pack cake 100-300 g · Sliced bread 300-500 g",
     "cert": "",
-    "image": "image30.jpeg"
+    "image": "image30.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "预包装蛋糕 100-300g · 切片面包 300-500g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2148,7 +2862,10 @@
     "customer": "Brand & supermarket supply",
     "spec": "Sesame Halva 200-500 g · Chocolate / Peanut / Original",
     "cert": "",
-    "image": "image29.jpeg"
+    "image": "image29.jpeg",
+    "customerZh": "品牌方与商超供应",
+    "specZh": "芝麻 Halva 200-500g · 巧克力味/花生味/原味",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2157,7 +2874,10 @@
     "customer": "Supermarket supply",
     "spec": "10-15 pcs/pack · Various flavors · 5-20 g",
     "cert": "",
-    "image": "image28.jpeg"
+    "image": "image28.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "10-15 片装 · 多口味 · 5-20g",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2166,7 +2886,10 @@
     "customer": "Supermarket supply",
     "spec": "Cup 80-150 g · Various flavors · 12-48 cups/case",
     "cert": "",
-    "image": "image27.jpeg"
+    "image": "image27.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "杯装 80-150g · 多种口味 · 12-48 杯/箱",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2175,7 +2898,10 @@
     "customer": "Chinese market supply",
     "spec": "Sachima 200-500 g · Mahua 200-500 g · Individually wrapped",
     "cert": "",
-    "image": "image26.jpeg"
+    "image": "image26.jpeg",
+    "customerZh": "华人市场供应",
+    "specZh": "沙琪玛 200-500g · 麻花 200-500g · 独立小包装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2184,7 +2910,10 @@
     "customer": "Chinese market supply",
     "spec": "Cantonese / Suzhou style · 50-150 g · Gift box",
     "cert": "",
-    "image": "image25.jpeg"
+    "image": "image25.jpeg",
+    "customerZh": "华人市场供应",
+    "specZh": "广式/苏式 · 50-150g · 礼盒装",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2193,7 +2922,10 @@
     "customer": "Retail supply",
     "spec": "Preserved fruit 100-500 g · Apricot / Plum / Raisin",
     "cert": "",
-    "image": "image24.jpeg"
+    "image": "image24.jpeg",
+    "customerZh": "零售供应",
+    "specZh": "蜜饯 100-500g · 杏脯 / 梅脯 / 葡萄干",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2202,7 +2934,10 @@
     "customer": "Catering & supermarket supply",
     "spec": "340 g / 397 g can · Beef / Chicken · Halal",
     "cert": "",
-    "image": "image23.jpeg"
+    "image": "image23.jpeg",
+    "customerZh": "餐饮与商超供应",
+    "specZh": "340g/397g 罐装 · 牛肉 / 鸡肉 · Halal 款",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2211,7 +2946,10 @@
     "customer": "Chinese market & retail supply",
     "spec": "207 g can · Ready-to-eat · Ambient",
     "cert": "",
-    "image": "image22.jpeg"
+    "image": "image22.jpeg",
+    "customerZh": "华人市场与零售供应",
+    "specZh": "207g 罐装 · 即食 · 常温",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2220,7 +2958,10 @@
     "customer": "Supermarket & catering supply",
     "spec": "185 g-1.85 kg · Oil / Water · All sizes",
     "cert": "",
-    "image": "image21.jpeg"
+    "image": "image21.jpeg",
+    "customerZh": "商超与餐饮供应",
+    "specZh": "185g-1.85kg · 油浸/水浸 · 多种规格",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2229,7 +2970,10 @@
     "customer": "Supermarket supply",
     "spec": "425 g-820 g can · Syrup / Juice",
     "cert": "",
-    "image": "image20.jpeg"
+    "image": "image20.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "425g-820g 罐装 · 糖水/果汁",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2238,7 +2982,10 @@
     "customer": "Supermarket supply",
     "spec": "425 g-820 g can · Syrup · Whole / Pieces",
     "cert": "",
-    "image": "image19.jpeg"
+    "image": "image19.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "425g-820g 罐装 · 糖水 · 整片/碎块",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2247,7 +2994,10 @@
     "customer": "Supermarket supply",
     "spec": "425 g can · Syrup · Whole fruit",
     "cert": "",
-    "image": "image18.jpeg"
+    "image": "image18.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "425g 罐装 · 糖水 · 整果",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2256,7 +3006,10 @@
     "customer": "Supermarket supply",
     "spec": "425 g can · Syrup · Whole fruit",
     "cert": "",
-    "image": "image17.jpeg"
+    "image": "image17.jpeg",
+    "customerZh": "商超供应",
+    "specZh": "425g 罐装 · 糖水 · 整果",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2265,7 +3018,10 @@
     "customer": "Food factory supply",
     "spec": "800 g-4.5 kg can · 28-30% / 36-38% concentration",
     "cert": "",
-    "image": "image16.png"
+    "image": "image16.png",
+    "customerZh": "食品厂供应",
+    "specZh": "800g-4.5kg 罐装 · 28-30% / 36-38% 浓度",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2274,7 +3030,10 @@
     "customer": "Food factory & catering supply",
     "spec": "Whole / Sliced mushroom · 425 g-2.85 kg · Brine",
     "cert": "",
-    "image": "image15.jpeg"
+    "image": "image15.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "整菇/片菇 · 425g-2.85kg · 盐水",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2283,7 +3042,10 @@
     "customer": "Chinese market & catering supply",
     "spec": "Whole / Sliced · 540 g-2.85 kg · Water",
     "cert": "",
-    "image": "image14.jpeg"
+    "image": "image14.jpeg",
+    "customerZh": "华人市场与餐饮供应",
+    "specZh": "整条/切片 · 540g-2.85kg · 清水",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2292,7 +3054,10 @@
     "customer": "Chinese market & retail supply",
     "spec": "360 g can · Ready-to-eat · Various flavors",
     "cert": "",
-    "image": "image13.png"
+    "image": "image13.png",
+    "customerZh": "华人市场与零售供应",
+    "specZh": "360g 罐装 · 即食 · 多口味",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2301,7 +3066,10 @@
     "customer": "Food factory & catering supply",
     "spec": "Chickpea 400 g-2.5 kg · Ready-to-eat · Local staple",
     "cert": "",
-    "image": "image12.jpeg"
+    "image": "image12.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "鹰嘴豆 400g-2.5kg · 即食 · 当地主粮",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2310,7 +3078,10 @@
     "customer": "Premium catering & retail supply",
     "spec": "Extra virgin · 250 ml-5 L · Glass / Tin",
     "cert": "",
-    "image": "image11.jpeg"
+    "image": "image11.jpeg",
+    "customerZh": "高端餐饮与零售供应",
+    "specZh": "特级初榨 · 250ml-5L · 玻璃/马口铁",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2319,7 +3090,10 @@
     "customer": "Importer & food factory supply",
     "spec": "5 L / 20 L / Bulk · Refined Grade 1",
     "cert": "",
-    "image": "image10.jpeg"
+    "image": "image10.jpeg",
+    "customerZh": "进口商与食品厂供应",
+    "specZh": "5L / 20L / 散装 · 一级精炼",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2328,7 +3102,10 @@
     "customer": "Importer & food factory supply",
     "spec": "5 L / 20 L / Bulk · Refined Grade 1",
     "cert": "",
-    "image": "image9.jpeg"
+    "image": "image9.jpeg",
+    "customerZh": "进口商与食品厂供应",
+    "specZh": "5L / 20L / 散装 · 一级精炼",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2337,7 +3114,10 @@
     "customer": "Food factory & catering supply",
     "spec": "5 L / 20 L · Pressed Grade 1 / Refined Grade 1",
     "cert": "",
-    "image": "image8.jpeg"
+    "image": "image8.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "5L / 20L · 压榨一级 / 精炼一级",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2346,7 +3126,10 @@
     "customer": "Food factory & retail supply",
     "spec": "5 L / 20 L · Rich in Vitamin E",
     "cert": "",
-    "image": "image7.jpeg"
+    "image": "image7.jpeg",
+    "customerZh": "食品厂与零售供应",
+    "specZh": "5L / 20L · 富含维生素 E",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2355,7 +3138,10 @@
     "customer": "Food factory supply",
     "spec": "20 L / Bulk · Refined Grade 1",
     "cert": "",
-    "image": "image6.jpeg"
+    "image": "image6.jpeg",
+    "customerZh": "食品厂供应",
+    "specZh": "20L / 散装 · 精炼一级",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2364,7 +3150,10 @@
     "customer": "Food factory & catering supply",
     "spec": "20 L / Bulk · Melting point grades 24°/33°/44°",
     "cert": "",
-    "image": "image5.jpeg"
+    "image": "image5.jpeg",
+    "customerZh": "食品厂与餐饮供应",
+    "specZh": "20L / 散装 · 24°/33°/44° 熔点分等级",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2373,7 +3162,10 @@
     "customer": "Premium retail & catering supply",
     "spec": "500 ml-5 L · Glass / Tin · Acidity ≤0.5°",
     "cert": "",
-    "image": "image4.jpeg"
+    "image": "image4.jpeg",
+    "customerZh": "高端零售与餐饮供应",
+    "specZh": "500ml-5L · 玻璃瓶 / 马口铁 · 酸度 ≤0.5°",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2382,7 +3174,10 @@
     "customer": "Health food channel supply",
     "spec": "250 ml-1 L · Cold-pressed · Glass bottle",
     "cert": "",
-    "image": "image3.jpeg"
+    "image": "image3.jpeg",
+    "customerZh": "健康食品渠道供应",
+    "specZh": "250ml-1L · 冷压榨 · 玻璃瓶",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2391,7 +3186,10 @@
     "customer": "Catering & food factory supply",
     "spec": "20 L / Bulk · Soy + Peanut + Corn golden blend",
     "cert": "",
-    "image": "image2.jpeg"
+    "image": "image2.jpeg",
+    "customerZh": "餐饮与食品厂供应",
+    "specZh": "20L / 散装 · 大豆+花生+玉米 黄金配比",
+    "certZh": ""
   },
   {
     "category": "Food & agricultural products",
@@ -2400,6 +3198,9 @@
     "customer": "Premium health food supply",
     "spec": "500 ml-2 L · Glass bottle · Cold-pressed",
     "cert": "",
-    "image": "image1.jpeg"
+    "image": "image1.jpeg",
+    "customerZh": "高端健康食品供应",
+    "specZh": "500ml-2L · 玻璃瓶 · 物理冷压榨",
+    "certZh": ""
   }
 ]
