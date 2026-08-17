@@ -260,6 +260,31 @@
     line-height: 1.7;
     color: var(--text);
   }
+  .modal-intro-text {
+    margin: 0 0 12px 0;
+    background: #f0f9ff;
+    border-left: 3px solid #0ea5e9;
+    padding: 12px 14px;
+    border-radius: 4px;
+    color: #0c4a6e;
+  }
+  .intro-related {
+    font-size: 13px;
+    color: var(--text-light);
+    padding: 8px 0 0 0;
+  }
+  .intro-related-label {
+    font-weight: 600;
+    color: var(--text);
+  }
+  .intro-related-link {
+    color: #0ea5e9;
+    text-decoration: none;
+    margin: 0 4px;
+  }
+  .intro-related-link:hover {
+    text-decoration: underline;
+  }
   .modal-specs {
     font-size: 13px;
     line-height: 1.6;
@@ -487,6 +512,7 @@
       <div class="modal-cat" id="modalCat"></div>
       <div class="modal-code" id="modalCode"></div>
       <h1 class="modal-name" id="modalName"></h1>
+      <div class="modal-intro" id="modalIntro"></div>
       <div class="modal-divider"></div>
       <div class="modal-section-label" data-zh>客户群 / 适用场景</div>
       <div class="modal-section-label" data-en>Customer Group / Application</div>
@@ -574,6 +600,34 @@
 
   // 兼容旧版映射（保留以防万一）
   const enNameMap = {};  // 现在不需要了——产品名直接用英文
+
+  // ============ 大类介绍模板 (详情页弹窗顶部展示) ============
+  const categoryIntro = {
+    '药食同源食材': {
+      zh: '我们提供完整的药食同源食材 B2B 供应能力,涵盖枸杞、红枣、茯苓、莲子、薏米、黄芪(食品级)、当归(食品级)、山药、百合、桑葚 等 110 种药食同源目录中的食材,支持 OEM 配方定制、贴牌包装、批量出口,具备 HACCP / ISO 22000 / 有机认证(欧盟/美国/中国) / 清真 / 洁食 等完整资质,符合欧盟、美国、日本、东南亚 等主要出口地区的食品级合规要求。',
+      en: 'Full B2B supply capability for Food-Grade TCM Herbs, covering the 110+ items in China\'s official "food-grade herb" catalog: goji, red date, poria, lotus seed, job\'s tears, food-grade astragalus and angelica, Chinese yam, lily bulb, mulberry, and more. OEM formula customization, private label packaging, and bulk export supported. Certified HACCP / ISO 22000 / Organic (EU/US/CN) / Halal / Kosher. Compliant with EU, US, Japan, and Southeast Asia import regulations for food-grade materials.',
+    },
+    '传统滋补品': {
+      zh: '我们提供高端传统滋补品 B2B 供应,涵盖蜂蜜(洋槐/野花/百花)、燕窝(白燕盏/燕条/燕碎)、西洋参、人参、鹿茸、阿胶、即食花胶、虫草、海参 等品类,支持礼品级包装定制、跨境品牌方贴牌、滋补品线开发,合作工厂具备食品级 SC / HACCP / ISO 22000 / FDA 注册 资质,可按客户需求提供 COA、原产地证明、出口检疫证。',
+      en: 'Premium Traditional Tonics B2B supply covering pure honey (acacia / wildflower / multifloral), edible bird\'s nest (white cups / strips /碎), American ginseng, ginseng, deer antler, donkey-hide gelatin (ejiao), ready-to-eat fish maw, cordyceps, sea cucumber, and more. Gift-grade packaging customization, cross-border brand private label, and tonic product line development supported. Partner factories certified SC / HACCP / ISO 22000 / FDA Registered. COA, certificate of origin, and export quarantine certificate available on request.',
+    },
+    '草本提取物': {
+      zh: '我们提供标准化的草本提取物 B2B 原料供应,涵盖黄芪多糖、枸杞多糖、绿茶 EGCG、甘草提取物、人参皂苷、银杏叶、灵芝多糖、藤黄果 等品类,有效成分含量可按客户需求定制(10%-98%),合作工厂具备 ISO 9001 / GMP / 清真 / 洁食 / 非转基因 资质,提供每批 COA 与第三方检测报告,支持 OEM 配方复配,广泛应用于保健品、功能食品、化妆品、饲料添加剂。',
+      en: 'Standardized Herbal Extracts B2B ingredient supply covering astragalus polysaccharides, goji polysaccharide, green tea EGCG, licorice extract, ginsenosides, ginkgo biloba, reishi polysaccharides, Garcinia cambogia, and more. Active ingredient content customizable (10%-98%). Partner factories certified ISO 9001 / GMP / Halal / Kosher / Non-GMO. COA and third-party test report per batch available. OEM formula blending supported. Widely used in supplements, functional food, cosmetics, and feed additives.',
+    },
+    '中药饮片': {
+      zh: '我们提供符合《中国药典 2020 版》标准的药食同源目录之外的 600+ 种中药饮片 B2B 供应,涵盖根茎类(当归/黄芪/党参/西洋参)、果实类(枸杞/山茱萸/五味子)、全草类(薄荷/蒲公英)、叶类(银杏叶/枇杷叶)、花类(菊花/金银花/红花) 等,合作基地具备 GAP 规范化种植资质,加工环节通过 GMP 认证,无硫磺熏蒸,提供每批 COA 与药检报告,服务于中医院、中药制药企业、中药房。',
+      en: 'Pharma-grade TCM Decoction Pieces B2B supply covering 600+ items per Chinese Pharmacopoeia 2020: roots (angelica, astragalus, codonopsis, American ginseng), fruits (goji, cornus, schisandra), herbs (mint, dandelion), leaves (ginkgo, loquat), and flowers (chrysanthemum, honeysuckle, safflower). GAP-certified cultivation bases, GMP processing, sulfur-free. COA and pharmacopoeia test report per batch. Serving TCM hospitals, TCM pharmaceutical manufacturers, and dispensaries.',
+    },
+    '保健食品代工': {
+      zh: '我们提供一站式保健食品 OEM/ODM 代工服务,涵盖胶囊(硬胶囊/软胶囊/素食胶囊)、片剂(圆形/异形/包衣)、口服液(玻璃瓶/安瓿)、粉剂(袋装/罐装)、软糖(维生素/矿物质/草本) 等多种剂型,合作工厂具备 GMP / ISO 22000 / FDA 注册 资质,支持配方研发、原料供应、批量生产、贴牌包装、出口合规,MOQ 灵活,可提供小批量试产与大批量供货,服务全球保健品品牌、Amazon / eBay 卖家、跨境电商品牌。',
+      en: 'One-stop Health Supplement OEM/ODM service covering capsules (hard / softgel / vegetarian), tablets (round / shaped / coated), oral liquid (glass bottle / ampoule), powder (sachet / can), and gummies (vitamin / mineral / herbal). Partner factories certified GMP / ISO 22000 / FDA Registered. Formula R&D, ingredient sourcing, mass production, private label, and export compliance supported. Flexible MOQ. Serving global supplement brands, Amazon/eBay sellers, and cross-border e-commerce brands.',
+    },
+    '功能性茶饮': {
+      zh: '我们提供功能性花草茶 B2B 供应与 OEM 代工,涵盖菊花枸杞茶、玫瑰花茶、茉莉花茶、薄荷茶、凉茶(菊花/金银花/罗汉果/甘草复配)、养生茶(红枣/桂圆/枸杞/姜)、袋泡茶、代用茶 等品类,合作工厂具备 HACCP / QS / FDA 注册 资质,支持原料复配、配方定制、袋泡茶包装、罐装礼盒、贴牌出口,广泛应用于茶品牌、健康饮品、餐饮渠道、酒店、礼品定制。',
+      en: 'Functional Herbal Teas B2B supply and OEM covering chrysanthemum-goji tea, rose tea, jasmine tea, mint tea, herbal cooling tea (chrysanthemum / honeysuckle / monk fruit / licorice blend), wellness tea (red date / longan / goji / ginger), teabag, and herbal infusions. Partner factories certified HACCP / QS / FDA Registered. Ingredient blending, formula customization, teabag packaging, gift box assembly, and private label export supported. Serving tea brands, healthy beverage, HoReCa, hotels, and gift customization.',
+    },
+  };
 
   // ============ Load products ============
   let ALL_PRODUCTS = [];   // 原始数据（持久）
@@ -867,7 +921,31 @@
     modalImg.alt = displayName;
     modalCode.textContent = `#${p.code}`;
     modalName.textContent = displayName;
-    
+
+    // 大类介绍 (基于子分类 category 字段)
+    const introKey = p.category;  // 子分类中文名
+    const introObj = categoryIntro[introKey];
+    if (introObj) {
+      const introText = lang === 'en' ? introObj.en : introObj.zh;
+      // 加上 "本类其他产品" 链接
+      const siblings = ALL_PRODUCTS
+        .filter(x => x.category === p.category && x.code !== p.code)
+        .slice(0, 4);  // 最多显示 4 个相关产品
+      const siblingHtml = siblings.length > 0
+        ? `<div class="intro-related">
+             <span class="intro-related-label" data-zh>同分类其他产品：</span>
+             <span class="intro-related-label" data-en>Related products: </span>
+             ${siblings.map(s => {
+               const sName = lang === 'en' ? s.nameOnly : (s.nameZh || s.nameOnly);
+               return `<a href="?id=${s.code}" class="intro-related-link" onclick="closeProduct()">${escapeHtml(sName)}</a>`;
+             }).join(' · ')}
+           </div>`
+        : '';
+      modalIntro.innerHTML = `<p class="modal-intro-text">${escapeHtml(introText)}</p>${siblingHtml}`;
+    } else {
+      modalIntro.innerHTML = '';
+    }
+
     // 客户群：中文模式用中文版字段，英文模式用英文版
     if (lang === 'en') {
       modalCustomer.textContent = p.customer || '—';
