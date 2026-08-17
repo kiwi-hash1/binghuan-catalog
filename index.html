@@ -341,6 +341,25 @@
     transform: translateY(-2px);
     border-color: #d1d5db;
   }
+  /* Placeholder badge (新分类待补) */
+  .product-card.is-placeholder {
+    border: 2px dashed #f59e0b;
+    background: #fffbeb;
+  }
+  .product-card .placeholder-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #f59e0b;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    z-index: 2;
+  }
+  .product-img { position: relative; }
   .product-img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -510,6 +529,13 @@
     'Building Materials & Construction Supplies': '建材与建筑物资',
     'Lighting & lamps': '灯具照明',
     'Food & agricultural products': '食品与农产品',
+    '大健康': 'Health & Wellness',
+    '药食同源食材': 'Food-Grade TCM Herbs',
+    '传统滋补品': 'Traditional Tonics',
+    '草本提取物': 'Herbal Extracts',
+    '中药饮片': 'TCM Decoction Pieces',
+    '保健食品代工': 'Health Supplement OEM',
+    '功能性茶饮': 'Functional Herbal Teas',
   };
 
   // 客户群中英文映射（用关键词匹配）
@@ -579,27 +605,52 @@
 
   // 首次加载：根据产品类目构建 nav 和 main 结构
   function buildLayout() {
-    // 按类目首次出现的顺序（保留 Excel 中的原始顺序）
+    // 按 category 首次出现的顺序（保留 Excel 中的原始顺序）
+    // 注意: 有 parent 的产品(category 是子分类)不创建独立 section
     const groups = {};
     const catOrder = [];
+    const seenParent = new Set();  // 大类是否已加入 catOrder
     ALL_PRODUCTS.forEach(p => {
-      if (!groups[p.category]) {
-        groups[p.category] = [];
-        catOrder.push(p.category);
+      if (p.parent) {
+        // 子分类: 不加入 catOrder(只在大类下展示)
+        if (!seenParent.has(p.parent)) {
+          seenParent.add(p.parent);
+          catOrder.push(p.parent);
+          groups[p.parent] = [];
+        }
+      } else {
+        if (!groups[p.category]) {
+          groups[p.category] = [];
+          catOrder.push(p.category);
+        }
+        groups[p.category].push(p);
       }
-      groups[p.category].push(p);
     });
 
-    // 生成 nav
+    // 根据 cat 是否含 ASCII 字符判断中英文方向
+    function catDisplay(cat) {
+      const isEnglish = /[a-zA-Z]/.test(cat);
+      const dataZh = isEnglish ? (catI18n[cat] || cat) : cat;
+      const dataEn = isEnglish ? cat : (catI18n[cat] || cat);
+      return { dataZh, dataEn, isEnglish };
+    }
+
+    // slug 源: 中文类目用 catI18n 反查英文,英文类目直接用 cat
+    function catSlug(cat, isEnglish) {
+      const source = isEnglish ? cat : (catI18n[cat] || cat);
+      const s = slugify(source);
+      return s || ('cat-' + catOrder.indexOf(cat));
+    }
+
+    // 生成 nav (跟其他分类同款,没有特殊样式)
     const navInner = document.getElementById('navInner');
     navInner.innerHTML = catOrder.map(cat => {
-      const slug = slugify(cat);
-      const nameEn = cat;
-      const nameZh = catI18n[cat] || cat;
+      const { dataZh, dataEn, isEnglish } = catDisplay(cat);
+      const slug = catSlug(cat, isEnglish);
       return `
         <a href="#cat-${slug}">
-          <span data-zh>${escapeHtml(nameZh)}</span>
-          <span data-en>${escapeHtml(nameEn)}</span>
+          <span data-zh>${escapeHtml(dataZh)}</span>
+          <span data-en>${escapeHtml(dataEn)}</span>
         </a>
       `;
     }).join('');
@@ -607,16 +658,18 @@
     // 生成 main
     const main = document.getElementById('mainContent');
     main.innerHTML = catOrder.map(cat => {
-      const slug = slugify(cat);
-      const nameEn = cat;
-      const nameZh = catI18n[cat] || cat;
-      const count = groups[cat].length;
+      const { dataZh, dataEn, isEnglish } = catDisplay(cat);
+      const slug = catSlug(cat, isEnglish);
+      // count: 大类取 parent 匹配产品数,其他取 category 匹配且非 parent 产品
+      const count = seenParent.has(cat)
+        ? ALL_PRODUCTS.filter(p => p.parent === cat).length
+        : (groups[cat] || []).filter(p => !p.parent).length;
       return `
         <section id="cat-${slug}" class="cat-section" data-cat="${escapeHtml(cat)}">
           <div class="cat-header">
             <h2 class="cat-title">
-              <span data-zh>${escapeHtml(nameZh)}</span>
-              <span data-en>${escapeHtml(nameEn)}</span>
+              <span data-zh>${escapeHtml(dataZh)}</span>
+              <span data-en>${escapeHtml(dataEn)}</span>
             </h2>
             <span class="cat-title-en" data-count>${count}</span>
             <span class="cat-count" data-zh>${count} 款产品</span>
@@ -641,12 +694,21 @@
       if (!groups[p.category]) groups[p.category] = [];
       groups[p.category].push(p);
     });
+    // 大类(parent)分组: 把所有 parent 匹配的产品聚合到大类名
+    const parentGroups = {};
+    filtered.forEach(p => {
+      if (p.parent) {
+        if (!parentGroups[p.parent]) parentGroups[p.parent] = [];
+        parentGroups[p.parent].push(p);
+      }
+    });
 
     // 渲染每个 cat-section
     document.querySelectorAll('.cat-section').forEach(section => {
       const cat = section.dataset.cat;
       const grid = section.querySelector('.product-grid');
-      const items = groups[cat] || [];
+      // 优先用 parent 组(大类),否则用普通 category 组
+      const items = parentGroups[cat] || groups[cat] || [];
       if (items.length === 0) {
         section.style.display = q ? 'none' : '';
         grid.innerHTML = '';
@@ -658,9 +720,11 @@
         const displayName = lang === 'en' ? p.nameOnly : (p.nameZh || p.nameOnly);
         const displaySpec = lang === 'en' ? p.spec : (p.specZh || p.spec);
         const displayCert = lang === 'en' ? p.cert : (p.certZh || p.cert);
+        const isPlaceholder = !!p._placeholder;
         return `
-          <div class="product-card">
+          <div class="product-card${isPlaceholder ? ' is-placeholder' : ''}">
             <div class="product-img">
+              ${isPlaceholder ? '<span class="placeholder-badge">SAMPLE</span>' : ''}
               <img src="./images/${escapeHtml(p.image)}" alt="${escapeHtml(displayName)}" loading="lazy">
             </div>
             <div class="product-body">

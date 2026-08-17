@@ -141,6 +141,7 @@
   .product-item.warn { border-color: var(--warn); background: #fffbeb; }
   .product-item.error { border-color: var(--error); background: #fef2f2; }
   .product-item.shared-img { border-color: var(--warn); border-style: dashed; }
+  .product-item.is-placeholder { border-color: #f59e0b; border-style: dashed; background: #fffbeb; }
 
   .product-img {
     width: 100%;
@@ -164,6 +165,7 @@
   .badge { display: inline-block; font-size: 9px; padding: 1px 4px; border-radius: 3px; margin-top: 3px; }
   .badge-warn { background: #fef3c7; color: #92400e; }
   .badge-error { background: #fee2e2; color: #991b1b; }
+  .badge-info { background: #fef3c7; color: #92400e; border: 1px solid #fbbf24; }
 
   /* Modal for big image */
   .img-modal {
@@ -327,9 +329,11 @@ function render() {
 function renderItem(p) {
   const isShared = SHARED_IMAGES.has(p.image);
   const isNoImg = !p.image;
-  const cls = isNoImg ? 'error' : isShared ? 'shared-img' : '';
+  const isPlaceholder = !!p._placeholder;
+  const cls = isNoImg ? 'error' : isShared ? 'shared-img' : isPlaceholder ? 'is-placeholder' : '';
   const badge = isNoImg ? '<span class="badge badge-error">缺图</span>'
-              : isShared ? '<span class="badge badge-warn">共用图</span>' : '';
+              : isShared ? '<span class="badge badge-warn">共用图</span>'
+              : isPlaceholder ? '<span class="badge badge-info">占位</span>' : '';
   const imgHtml = isNoImg
     ? '<div class="product-img no-img">无图</div>'
     : `<div class="product-img" onclick="event.stopPropagation(); zoomImg('${p.image}', '${p.code} ${escapeHtml(p.nameOnly)}')">
